@@ -14,7 +14,7 @@ function getNameFromTitle() {
     return document.title.substring(0, index-1);
 }
 
-let root = "/bdfd-wiki/"
+let root = "/doc-coopbot/"
 let path = location.pathname.substring(11);
 
 if (path.startsWith("nightly")) {
