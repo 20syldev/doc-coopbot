@@ -43,10 +43,9 @@ Nous pouvons avertir/interdire des utilisateurs si nous découvrons qu'ils n'ont
 Toute utilisation et tout accès à notre service sont soumis aux présentes conditions. Si vous ne les acceptez pas, vous ne devez pas utiliser le service.
 
 En cas de modification de nos conditions, si vous n'êtes pas d'accord avec les nouvelles conditions, vous êtes libre de les rejeter en cessant d'utiliser notre service.
-> Les utilisateurs enregistrés peuvent retirer leurs données via l'application mobile et demander la suppression des données en contactant le service d'assistance.
 
 ## Contact 
 Si vous avez des questions ou des inquiétudes concernant les présentes conditions ou notre service, vous pouvez nous contacter par courrier électronique.
 
 
-L'assistance pour les utilisateurs réguliers est disponible à l'adresse [`contact.coopbot@gmail.com`](mailto:contact.coopbot@gmail.com).
+L'assistance pour les utilisateurs réguliers est disponible à l'adresse [`contact.coopbot@gmail.com`](mail:contact.coopbot@gmail.com).
