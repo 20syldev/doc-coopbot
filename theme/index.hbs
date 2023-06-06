@@ -96,7 +96,7 @@
             html.classList.add("sidebar-" + sidebar);
         </script>
 
-        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+        <nav id="sidebar" class="sidebar" aria-label="Menu">
             <div id="sidebar-scrollbox" class="sidebar-scrollbox">
                 {{#toc}}{{/toc}}
             </div>
@@ -109,27 +109,24 @@
                 <div id="menu-bar" class="menu-bar">
                     <div id="menu-bar-sticky-container">
                         <div class="left-buttons">
-                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Menu" aria-label="Menu" aria-controls="sidebar">
                                 <i class="fa fa-bars"></i>
                             </button>
-                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <button id="theme-toggle" class="icon-button" type="button" title="Changer de thème" aria-label="Changer de thème" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
                                 <i class="fa fa-paint-brush"></i>
                             </button>
-                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
-                                <li role="none"><button role="menuitem" class="theme" id="ayu">{{ theme_option "Ayu" }}</button></li>
-                                <li role="none"><button role="menuitem" class="theme" id="bdfd">{{ theme_option "Bot Designer for Discord" }}</button></li>
+                            <ul id="theme-list" class="theme-popup" aria-label="Thèmes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="amethyste">{{ theme_option "Améthyste" }}</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coop">{{ theme_option "Coop Bot" }}</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="cyber">{{ theme_option "Cyber" }}</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="dark">{{ theme_option "Sombre" }}</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="desert">{{ theme_option "Désert" }}</button></li>
                                 <li role="none"><button role="menuitem" class="theme" id="discord">{{ theme_option "Discord" }}</button></li>
-                                <li role="none"><button role="menuitem" class="theme" id="gluo">{{ theme_option "Gluo" }}</button></li>
-                                <li role="none"><button role="menuitem" class="theme" id="green">{{ theme_option "Green" }}</button></li>
-                                <li role="none"><button role="menuitem" class="theme" id="ios">{{ theme_option "iOS" }}</button></li>
-                                <li role="none"><button role="menuitem" class="theme" id="kneon">{{ theme_option "Kinda Neon" }}</button></li>
-                                <li role="none"><button role="menuitem" class="theme" id="light">{{ theme_option "Light" }}</button></li>
-                                <li role="none"><button role="menuitem" class="theme" id="navy">{{ theme_option "Navy" }}</button></li>
-                                <li role="none"><button role="menuitem" class="theme" id="rust">{{ theme_option "Rust" }}</button></li>
-                                <li role="none"><button role="menuitem" class="theme" id="highcon">{{ theme_option "High Contrast" }}</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="light">{{ theme_option "Clair" }}</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="neon">{{ theme_option "Néon" }}</button></li>
                             </ul>
                             {{#if search_enabled}}
-                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <button id="search-toggle" class="icon-button" type="button" title="Rechercher (Raccourci : s)" aria-label="Recherche" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
                                 <i class="fa fa-search"></i>
                             </button>
                             {{/if}}
@@ -140,22 +137,16 @@
                         <div class="right-buttons">
 
                             {{#if print_enable}}
-                            <a href="{{ path_to_root }}print.html" title="Print this book" aria-label="Print this book">
+                            <a href="{{ path_to_root }}print.html" title="Imprimer cette page" aria-label="Imprimer cette page">
                                 <i id="print-button" class="fa fa-print"></i>
                             </a>
                             {{/if}}
 
                             {{#if git_repository_url}}
-                            <a href="{{git_repository_url}}" title="Git repository" aria-label="Git repository">
+                            <a href="{{git_repository_url}}" title="Dépôt GitHub" aria-label="Dépôt GitHub">
                                 <i id="git-repository-button" class="fa {{git_repository_icon}}"></i>
                             </a>
                             {{/if}}
-
-                           {{#if git_repository_edit_url}}
-                           <a href="{{git_repository_edit_url}}" title="Suggest an edit" aria-label="Suggest an edit">
-                               <i id="git-edit-button" class="fa fa-edit"></i>
-                           </a>
-                           {{/if}}
 
                         </div>
                     </div>
@@ -164,7 +155,7 @@
                 {{#if search_enabled}}
                 <div id="search-wrapper" class="hidden">
                     <form id="searchbar-outer" class="searchbar-outer">
-                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Rechercher dans le wiki..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
                     </form>
                     <div id="searchresults-outer" class="searchresults-outer hidden">
                         <div id="searchresults-header" class="searchresults-header"></div>

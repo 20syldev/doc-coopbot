@@ -2,20 +2,14 @@
 @import './wiki-themes/root.css';
 @import './wiki-themes/breadcrumbs.css';
 
-/* Community Themes */
-@import './wiki-themes/comm/bdfd.css';
-@import './wiki-themes/comm/ios.css';
-@import './wiki-themes/comm/green.css';
-@import './wiki-themes/comm/gluo.css';
-@import './wiki-themes/comm/kneon.css';
-@import './wiki-themes/comm/discord.css';
-@import './wiki-themes/comm/highcon.css';
-
-/* Initial Themes */
-@import './wiki-themes/init/ayu.css';
-@import './wiki-themes/init/light.css';
-@import './wiki-themes/init/navy.css';
-@import './wiki-themes/init/rust.css';
+@import './wiki-themes/basic/amethyste.css';
+@import './wiki-themes/basic/coop.css';
+@import './wiki-themes/basic/cyber.css';
+@import './wiki-themes/basic/dark.css';
+@import './wiki-themes/basic/desert.css';
+@import './wiki-themes/basic/discord.css';
+@import './wiki-themes/basic/light.css';
+@import './wiki-themes/basic/neon.css';
 
 /* Light No JS */
 @media (prefers-color-scheme: dark) {
