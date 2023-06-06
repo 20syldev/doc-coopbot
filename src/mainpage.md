@@ -6,7 +6,7 @@ What are you waiting for? Create the bot of your dreams today!
 
 **Start with [*Bot Designer for Discord*](https://botdesignerdiscord.com)**
 
-### 📎 Links
+### 📎 Liens
 - [Discord Server](https://botdesignerdiscord.com/discord)
 - [Website](https://botdesignerdiscord.com/)
 - [Android App](https://play.google.com/store/apps/details?id=com.jakubtomana.discordbotdesinger)
