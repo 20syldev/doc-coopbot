@@ -1,21 +1,37 @@
 <div align="center">
-  <a href="https://beacons.ai/coopbot">
-    <img src="https://i.postimg.cc/KY89ycRj/Coop-Bot-Lettre-Unique-Anim.gif" alt="Coop Bot GIF" style="width: 25%; border-radius: 50%; border: 2px solid black;">
-  </a>
-  <br>
-  <strong>Coop - Bot Discord - Wiki</strong>
+
+[![BDFD Logo](https://cdn.discordapp.com/emojis/983229875831832617.gif)](https://botdesignerdiscord.com)
+
+## Bot Designer For Discord - Wiki
+
+[![GitHub Forks](https://img.shields.io/github/forks/NilPointer-Software/bdfd-wiki?style=flat&logo=Github&label=Forks)](https://github.com/NilPointer-Software/bdfd-wiki/network/members)
+[![GitHub Repo Stars](https://img.shields.io/github/stars/NilPointer-Software/bdfd-wiki?style=flat&logo=Github&label=Stars)](https://github.com/NilPointer-Software/bdfd-wiki/stargazers)
+[![GitHub Watchers](https://img.shields.io/github/watchers/NilPointer-Software/bdfd-wiki?style=flat&logo=Github&label=Watchers)](https://github.com/NilPointer-Software/bdfd-wiki/watchers)
+\
+[![GitHub Contributors](https://img.shields.io/github/contributors/Nilpointer-Software/bdfd-wiki?style=flat&logo=Github&label=Contributors)](https://github.com/NilPointer-Software/bdfd-wiki/graphs/contributors)
+[![GitHub Commit Activity](https://img.shields.io/github/commit-activity/m/NilPointer-Software/bdfd-wiki?logo=GitHub&style=flat&label=Commit+activity)](https://github.com/NilPointer-Software/bdfd-wiki/graphs/commit-activity)
+[![GitHub Last Commit](https://img.shields.io/github/last-commit/NilPointer-Software/bdfd-wiki?style=flat&logo=Github&label=Last+commit)](https://github.com/NilPointer-Software/bdfd-wiki/commits)
+\
+[![Discord](https://img.shields.io/discord/566363823137882154?label=Discord%20server&logo=Discord&style=flat)](https://discord.com/servers/bot-designer-for-discord-official-server-566363823137882154)
+[![mdBook](https://img.shields.io/badge/Powered%20by-mdBook-orange?style=flat&logo=mdbook)](https://github.com/rust-lang/mdBook)
+
 </div>
 
 ---
-## À propos
+## About
 
-**Coop** est un Bot Discord, **multifonctionnel**, facile à utiliser et doté d'un large **éventail de capacités** différentes et amusantes. Avec Coop qui veille sur votre serveur 24h/7j, vous et vos membres auront de la compagnie ! Vous pouvez faire plusieurs choses, surtout pour l'animation du serveur, grâce à une soixantaine de commandes slash disponibles.
+**Bot Designer For Discord** is a free-to-use Discord Bot maker available for Android, iOS and Web. It's capable of developing nearly all types of bots from simple "echo" bots to advanced multi-purpose administration ones.
 
-Il s'agit du dépôt **GitHub officiel** du Wiki Coop Bot qui explique les commandes, les utilisations et les caractéristiques de Coop.
+This is the official GitHub repository of BDFD Wiki which explains BDFD functions, callbacks, and features.
 
-### Liens 
-- [Site Internet](https://beacons.ai/coopbot)
-- [Wiki](https://20syldev.github.io/doc-coopbot)
-- [Inviter le bot](https://discord.com/api/oauth2/authorize?client_id=881455282838962186&permissions=8&redirect_uri=https%3A%2F%2Fdiscord.gg%2FASpCdT2JZQ&response_type=code&scope=bot%20messages.read%20guilds.members.read%20identify%20guilds%20role_connections.write%20applications.commands)
-- [Serveur Support Discord](https://discord.gg/ASpCdT2JZQ)
-- [Top.gg](https://top.gg/bot/881455282838962186)
+### Links
+- [Website](https://botdesignerdiscord.com)
+- [Wiki](https://nilpointer-software.github.io/bdfd-wiki)
+- [Wiki (Nightly)](https://nilpointer-software.github.io/bdfd-wiki/nightly)
+- [Android App](https://play.google.com/store/apps/details?id=com.jakubtomana.discordbotdesinger)
+- [iOS App](https://apps.apple.com/us/app/bot-designer-for-discord/id1495536477)
+- [Web App](https://botdesignerdiscord.com/app)
+- [Discord Server](https://discord.com/servers/bot-designer-for-discord-official-server-566363823137882154)
+
+### Contribution
+If you would like to contribute in this repository, do checkout [CONTRIBUTING.md](CONTRIBUTING.md) for further information.
