@@ -1,4 +1,4 @@
-# Foreword
+# Accueil
 ### ✨ Imagine An App...
 ...That makes building Discord bots easy with beginner-friendly functions. An app that's capable of developing nearly all types of bots - from simple *echo* bots, to advanced multi-purpose administration ones. Where simplicity meets functionality and scalability. That's **Bot Designer for Discord**.
 
