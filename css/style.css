@@ -124,25 +124,6 @@ h1 a {
     transition: transform 0.3s ease-in-out;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-}
-
-
-.menu-toggle {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    background-color: #3578d8;
-    color: #ffffff;
-    border: none;
-    cursor: pointer;
-    text-align: center;
-    transition: background-color 0.3s ease-in-out;
-}
-
-.menu-toggle:hover {
-    background-color: #2d66b8;
 }
 
 .menu-items {
@@ -406,3 +387,33 @@ h1 a {
     transform: translateX(23.5%);
 }
 
+/* Style de base de la barre de défilement */
+::-webkit-scrollbar {
+    margin-left: 50%;
+    height: 100%;
+    width: 15px; 
+    background-color: #131516;
+    overflow-y: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px 10px;
+}
+
+::-webkit-scrollbar:vertical{
+    height: max-content;
+}
+  
+  /* Style du "pouce" de la barre de défilement */
+  ::-webkit-scrollbar-thumb {
+    background-color: #98a3ad;
+    border-radius: 0px;
+  }
+  
+  /* Style du "pouce" de la barre de défilement au survol */
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #98a3ad;
+  }
+  
