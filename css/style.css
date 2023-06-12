@@ -464,7 +464,10 @@ h1 a {
   
 
 #btn1 {
+    position: relative;
     margin-left: 20%;
+    margin-top: -23.5%;
+    display: block;
     background-color: #27292a;
     width: 70px;
     height: 25px;
@@ -489,7 +492,10 @@ h1 a {
 }
 
 #btn2 {
+    position: relative;
     margin-left: 20%;
+    margin-top: 0.2%;
+    display: block;
     background-color: #27292a;
     width: 70px;
     height: 25px;
@@ -514,7 +520,10 @@ h1 a {
 }
 
 #btn3 {
+    position: relative;
     margin-left: 20%;
+    margin-top: 0.2%;
+    display: block;
     background-color: #27292a;
     width: 70px;
     height: 25px;
