@@ -5,9 +5,7 @@ menuToggle.addEventListener('click', function() {
   menuItems.classList.toggle('show');
 });
 
-var commandsColumnVisible1 = true;
-var commandsColumnVisible2 = true;
-var commandsColumnVisible3 = true;
+var commandsColumnVisible1, commandsColumnVisible2, commandsColumnVisible3, commandsColumnVisible4 = true;
 
 function toggleCommandsColumn1() {
   var commandsColumn = document.getElementById("commands-column1");
@@ -58,4 +56,21 @@ function toggleCommandsColumn3() {
   }
 
   commandsColumnVisible3 = !commandsColumnVisible3;
+}
+
+function toggleCommandsColumn4() {
+  var commandsColumn = document.getElementById("commands-column4");
+  var toggleButton = document.querySelector(".toggle4");
+
+  if (commandsColumnVisible4) {
+    commandsColumn.style.display = "none";
+    toggleButton.classList.remove("rotate");
+    toggleButton.classList.add("reverse");
+  } else {
+    commandsColumn.style.display = "block";
+    toggleButton.classList.remove("reverse");
+    toggleButton.classList.add("rotate");
+  }
+
+  commandsColumnVisible4 = !commandsColumnVisible4;
 }
