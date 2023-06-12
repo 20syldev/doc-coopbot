@@ -12,6 +12,7 @@ ul, ol {
 
 h1, h2, h3, h4, h5, h6, pre, code {
     font-size: 1em;
+    font-weight: 100;
 }
 
 ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, body, html, p, blockquote, fieldset, input {
@@ -28,15 +29,15 @@ address {
 }
 
 body {
-    font: .74em Arial, Sans-Serif;
-    background: #7289DA /*Background du site*/ url(.images/bg.gif) repeat-x;
-    color: #23272A /*Couleur du texte*/;
+    font: .74em 'Open Sans', Sans-Serif;
+    background: #131516 /*Background du site*/ url(.images/bg.gif) repeat-x;
+    color: #98a3ad /*Couleur du texte*/;
     line-height: 1.6em;
+    overflow: hidden;
 }
 
 a {
-    color: #ffffff /*Couleur des sous-titres*/;
-    text-decoration: underline;
+    color: #98a3ad /*Couleur des sous-titres*/;
 }
 
 a:hover {
@@ -50,15 +51,16 @@ p {
 h2 {
     background: url(.images/bullet.gif) no-repeat left 6px;
     font-size: 1.2em;
-    padding: 0 0 0 9px;
+    padding: 0 0 0 0px;
 }
 
 h2 a {
     text-decoration: underline;
+    font-size: 1.25em;
 }
 
 h1 {
-    font: 2.3em Georgia;
+    font: 2.3em 'Open Sans', sans-serif;
     margin: 0 0 22px;
 }
 
@@ -66,71 +68,16 @@ h1 a {
     color: #ffffff /*Couleur du titre*/;
 }
 
-h1 a:hover {
-    color: #23272A /*Couleur du titre quand la souris passe dessus*/;
-}
-
-.clear {
-    clear: both;
-}
-
 .wrap {
     margin: 25px auto;
-    width: 880px;
-}
-
-#options {
-    float: right;
-    color: #ffffff /**/;
-    font-weight: bold;
-}
-
-#options a {
-    color: #ffffff /*Couleur des icônes*/;
-    padding: 0 0 0 8px;
-    background: url(.images/bullet.gif) no-repeat left 5px;
-    margin: 0 0 0 10px;
-}
-
-#options a:hover {
-    color: #E6E8B1 /*Couleur des icônes quand la souris passe dessus*/;
-}
-
-#menu {
-    float: left;
-    margin: 0 0 40px;
-}
-
-#menu li {
-    display: inline;
-}
-
-#menu li a {
-    float: left;
-    padding: 8px 30px;
-    margin: 0 1px 0 0;
-    color: #23272A /*Couleur des menus*/;
-    background: #ffffff /*Arrière-plan des menus*/;
-}
-
-#menu li a:hover {
-    color: #304bd4 /*Couleur du texte des menus quand la souris passe dessus**/;
-    background: #c4d3ef /*Couleur de l'arrière-plan des menus quand la souris passe dessus*/;
+    width: 880px;  
+    transform: translateX(23.5%);
 }
 
 #left {
     float: left;
     width: 600px;
     margin: 0 0 40px;
-}
-
-#right {
-    float: right;
-    width: 270px;
-    margin: 0 0 40px;
-    background: #c1f7bf /*Contour intérieur de la box*/;
-    border: 1px solid #ffffff /*Contour extérieur de la box*/;
-    padding: 1px;
 }
 
 .box {
@@ -150,38 +97,231 @@ h1 a:hover {
 }
 
 #footer {
-    clear: both;
-    border-top: 5px solid #4E5D94 /*Haut du bas de page*/;
-    background: #4E5D94 /*Arrière-plan du bas de page*/ url(.images/footerbg.gif) repeat-x bottom;
-    color: #ffffff /*Couleur du texte du bas de page*/;
-    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 51px;
+    background: #4E5D94 url(.images/footerbg.gif) repeat-x bottom;
+    color: #ffffff;
+    font-size: 1.5em;
+    text-align: center;
+    padding: 0;
 }
 
-#footer ul {
-    float: left;
-    width: 200px;
+#footer .text {
+    user-select: none;
+    position: relative;
+    top: 51%;
+    left: 10%;
+    transform: translateY(-50%);
+    font-size: 1.15em;
 }
 
-#footer li {
-    padding: 5px 8px;
-    background: url(.images/dot.gif) repeat-x bottom;
+
+#left-menu {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 300px;
+    height: 100vh;
+    background-color: #292c2f;
+    z-index: 1;
+    transform: translateX(0);
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
-#footer li a {
-    color: #ffffff /*Couleur des petits liens du bas de page*/;
+
+.menu-toggle {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #3578d8;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease-in-out;
 }
 
-#footer li a:hover {
-    color: #8fd7ed /*Couleur des petits liens du bas de page quand la souris passe dessus*/;
+.menu-toggle:hover {
+    background-color: #2d66b8;
 }
 
-#footer #col {
-    float: right;
-    width: 600px;
+.menu-items {
+    padding: 5px;
+    margin: 0;
+    list-style: none;
+    opacity: 0;
+    animation: fade-in 0.3s ease-in-out;
+    animation-fill-mode: forwards;
+    height: calc(100vh - 40px); 
+    overflow-y: auto;
 }
 
-#copyright {
-    background: url(.images/dot.gif) repeat-x top;
-    padding: 24px 0 0;
-    font-size: .9em;
+@keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+}
+
+.menu-items li {
+    padding: 6px;
+}
+
+.menu-items li a {
+    font-size: 1.185em;
+    display: block;
+    color: #a1adb8;
+    transition: color 0.3s ease-in-out;
+}
+
+.menu-items li a:hover {
+    color: #d4e5fd;
+}
+
+  
+.bar {
+    margin-left: 5px;
+    width: 280px;
+    height: 3.5px;
+    background-color: #393939;
+    position: relative;
+    top: 0.9%;
+    transform: translateY(-50%);
+    margin-bottom: 10px;
+}
+
+
+.toggle1 {
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+}
+  
+.toggle1 div {
+    position: absolute;
+    left: 95%;
+    top: 50%;
+    transform: translate(-50%, -100%);
+    transition: transform 0.3s ease-in-out;
+}
+  
+.toggle1.rotate div {
+    animation: rotateInAnimation 0.3s ease-in-out forwards;
+}
+  
+.toggle1.reverse div {
+    animation: rotateOutAnimation 0.3s ease-in-out forwards;
+}
+  
+@keyframes rotateInAnimation {
+    from {
+      transform: translate(-50%, -100%) rotate(0deg);
+    }
+    to {
+      transform: translate(-50%, -100%) rotate(90deg);
+    }
+}
+  
+@keyframes rotateOutAnimation {
+    from {
+      transform: translate(-50%, -100%) rotate(90deg);
+    }
+    to {
+      transform: translate(-50%, -100%) rotate(0deg);
+    }
+}
+
+
+.toggle2 {
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+}
+  
+.toggle2 div {
+    position: absolute;
+    left: 95%;
+    top: 50%;
+    transform: translate(-50%, -100%);
+    transition: transform 0.3s ease-in-out;
+}
+  
+.toggle2.rotate div {
+    animation: rotateInAnimation 0.3s ease-in-out forwards;
+}
+  
+.toggle2.reverse div {
+    animation: rotateOutAnimation 0.3s ease-in-out forwards;
+}
+  
+@keyframes rotateInAnimation {
+    from {
+      transform: translate(-50%, -100%) rotate(0deg);
+    }
+    to {
+      transform: translate(-50%, -100%) rotate(90deg);
+    }
+}
+  
+@keyframes rotateOutAnimation {
+    from {
+      transform: translate(-50%, -100%) rotate(90deg);
+    }
+    to {
+      transform: translate(-50%, -100%) rotate(0deg);
+    }
+}
+
+
+.toggle3 {
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+}
+  
+.toggle3 div {
+    position: absolute;
+    left: 95%;
+    top: 50%;
+    transform: translate(-50%, -100%);
+    transition: transform 0.3s ease-in-out;
+}
+  
+.toggle3.rotate div {
+    animation: rotateInAnimation 0.3s ease-in-out forwards;
+}
+  
+.toggle3.reverse div {
+    animation: rotateOutAnimation 0.3s ease-in-out forwards;
+}
+  
+@keyframes rotateInAnimation {
+    from {
+      transform: translate(-50%, -100%) rotate(0deg);
+    }
+    to {
+      transform: translate(-50%, -100%) rotate(90deg);
+    }
+}
+  
+@keyframes rotateOutAnimation {
+    from {
+      transform: translate(-50%, -100%) rotate(90deg);
+    }
+    to {
+      transform: translate(-50%, -100%) rotate(0deg);
+    }
+}
+
+.openmenu {
+    font-family: 'Open Sans', sans-serif;
+    margin-left: 8%;
 }
