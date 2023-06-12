@@ -365,16 +365,21 @@ h1 a {
     margin-left: 8%;
 }
 
-.linkText1 {
+.linkText1 a {
     font-size: 1.3em;
     color: #76a4e4;
     margin-left: 35%;
 }
 
-.linkText2 {
+.linkText2 a {
     font-size: 1.3em;
     color: #76a4e4;
     margin-left: 0.2%;
+}
+
+.linkText1 a:hover,
+.linkText2 a:hover {
+    color: #d0d0d0
 }
 
 .linkSeparator {
@@ -383,7 +388,9 @@ h1 a {
     margin-left: 0.2%;
 }
 
-
+.homes3 {
+    color: #76a4e4;
+}
 
 .titleHome {
     margin-left: 35%;
@@ -398,3 +405,4 @@ h1 a {
     font-size: 1.2em;
     transform: translateX(23.5%);
 }
+
