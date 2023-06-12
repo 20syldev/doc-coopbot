@@ -171,6 +171,7 @@ h1 a {
     animation-fill-mode: forwards;
     height: calc(100vh - 40px); 
     overflow-y: auto;
+    overflow-x: hidden;
 }
 
 @keyframes fade-in {
@@ -435,8 +436,15 @@ h1 a {
 .sub {
     margin-left: 35%;
     font-family: 'Open Sans', sans-serif;
-    font-size: 1.2em;
-    transform: translateX(23.5%);
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.sub2 {
+    margin-left: 35%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.35em;
+    width: 48%;
 }
 
 /* Style de base de la barre de défilement */
@@ -447,7 +455,7 @@ h1 a {
     background-color: #292c2f;
     overflow-y: auto;
     overflow-x: hidden;
-    position: absolute;
+    position: relative;
     top: 0;
     bottom: 0;
     left: 0;
@@ -470,7 +478,7 @@ h1 a {
 #btn1 {
     position: relative;
     margin-left: 20%;
-    margin-top: -23.5%;
+    margin-top: 0.2%;
     display: block;
     background-color: #27292a;
     width: 70px;
@@ -498,7 +506,7 @@ h1 a {
 #btn2 {
     position: relative;
     margin-left: 20%;
-    margin-top: 0.2%;
+    margin-top: 0.2.2%;
     display: block;
     background-color: #27292a;
     width: 70px;
@@ -526,7 +534,7 @@ h1 a {
 #btn3 {
     position: relative;
     margin-left: 20%;
-    margin-top: 0.2%;
+    margin-top: 0.2.2%;
     display: block;
     background-color: #27292a;
     width: 70px;
