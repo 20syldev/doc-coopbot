@@ -49,7 +49,6 @@ p {
 }
 
 h2 {
-    background: url(.images/bullet.gif) no-repeat left 6px;
     font-size: 1.2em;
     padding: 0 0 0 0px;
 }
@@ -73,7 +72,7 @@ h1 a {
     top: 0;
     width: 100%;
     height: 51px;
-    background: #4E5D94 url(.images/footerbg.gif) repeat-x bottom;
+    background: #4E5D94;
     color: #ffffff;
     font-size: 1.5em;
     text-align: center;
@@ -86,10 +85,31 @@ h1 a {
     top: 51%;
     left: 10%;
     transform: translateY(-50%);
-    font-size: 1.6em;
+    font-size: 1.7em;
     font-family: 'Braah One', sans-serif;
     font-weight: lighter;
+
+    color: #c6e2ff;
+    text-shadow:
+      0 0 6px #4a81c9eb,
+      0 0 12px #81d8ecf7,
+      0 0 21px #3e51bdff,
+      0 0 34px #2e5bbc,
+      0 0 54px #2f5ae8eb;  
+      
+    animation: textAnimation 5s infinite;
 }
+@keyframes textAnimation {
+    0% { color: #ffffff;
+        opacity: 1;
+    }
+    50% { color: #92b6f9;
+        opacity: 1;
+    }
+    100% { color: #ffffff;
+        opacity: 1;
+    }
+  }
 
 
 #left-menu {
@@ -354,13 +374,13 @@ h1 a {
 .linkText2 {
     font-size: 1.3em;
     color: #76a4e4;
-    margin-left: 10%;
+    margin-left: 0.2%;
 }
 
 .linkSeparator {
     font-size: 1.3em;
     color: #76a4e4;
-    margin-left: 0.5%;
+    margin-left: 0.2%;
 }
 
 
