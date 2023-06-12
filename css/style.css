@@ -41,7 +41,7 @@ a {
 }
 
 a:hover {
-    color: #23272A /*Couleur des sous-titres quand la souris passe dessus*/;
+    color: #76a4e4 /*Couleur des sous-titres quand la souris passe dessus*/;
 }
 
 p {
@@ -158,7 +158,7 @@ h1 a {
 }
 
 .menu-items li a:hover {
-    color: #d4e5fd;
+    color: #93b7ea;
 }
 
   
