@@ -71,10 +71,18 @@ function toggleCommandsColumn4() {
 
 function switchTheme(theme) {
   var leftMenu = document.getElementById('left-menu');
+  var bodycolor = document.getElementById('body-color');
+  var footer = document.getElementById('footer');
+  var bar = document.getElementById('bar');
 
-  // Supprimer toutes les classes de thème existantes
-  leftMenu.classList.remove('theme1', 'theme2', 'theme3', 'theme4');
+  leftMenu.classList.remove('theme1', 'theme2', 'theme3');
+  bodycolor.classList.remove('theme1', 'theme2', 'theme3');
+  footer.classList.remove('theme1', 'theme2', 'theme3');
+  bar.classList.remove('theme1', 'theme2', 'theme3');
+  
 
-  // Ajouter la classe de thème sélectionnée
   leftMenu.classList.add(theme);
+  bodycolor.classList.add(theme);
+  footer.classList.add(theme);
+  bar.classList.add(theme);
 }
