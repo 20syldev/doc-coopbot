@@ -1,10 +1,3 @@
-const menuToggle = document.querySelector('.menu-toggle');
-const menuItems = document.querySelector('.menu-items');
-
-menuToggle.addEventListener('click', function() {
-  menuItems.classList.toggle('show');
-});
-
 var commandsColumnVisible1, commandsColumnVisible2, commandsColumnVisible3, commandsColumnVisible4 = true;
 
 function toggleCommandsColumn1() {
@@ -73,4 +66,15 @@ function toggleCommandsColumn4() {
   }
 
   commandsColumnVisible4 = !commandsColumnVisible4;
+}
+
+
+function switchTheme(theme) {
+  var leftMenu = document.getElementById('left-menu');
+
+  // Supprimer toutes les classes de thème existantes
+  leftMenu.classList.remove('theme1', 'theme2', 'theme3', 'theme4');
+
+  // Ajouter la classe de thème sélectionnée
+  leftMenu.classList.add(theme);
 }

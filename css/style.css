@@ -30,7 +30,7 @@ address {
 
 body {
     font: .74em 'Open Sans', Sans-Serif;
-    background: #131516 /*Background du site*/ url(.images/bg.gif) repeat-x;
+    background: #131516;
     color: #98a3ad /*Couleur du texte*/;
     line-height: 1.6em;
     overflow: hidden;
@@ -125,6 +125,23 @@ h1 a {
     display: flex;
     flex-direction: column;
 }
+
+#left-menu.theme1 {
+    background-color: #292c2f;
+}
+
+#left-menu.theme2 {
+    background-color: #ffffff;
+}
+
+#left-menu.theme3 {
+    background-color: #0055ff;
+}
+
+#left-menu.theme4 {
+    background-color: #8b7979;
+}
+
 
 .menu-items {
     padding: 5px;
