@@ -74,4 +74,3 @@ function toggleCommandsColumn4() {
 
   commandsColumnVisible4 = !commandsColumnVisible4;
 }
-

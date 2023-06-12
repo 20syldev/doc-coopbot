@@ -390,20 +390,17 @@ h1 a {
 /* Style de base de la barre de défilement */
 ::-webkit-scrollbar {
     margin-left: 50%;
-    height: 100%;
+    height: 10px;
     width: 15px; 
-    background-color: #131516;
+    background-color: #292c2f;
     overflow-y: auto;
+    overflow-x: hidden;
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
     padding: 10px 10px;
-}
-
-::-webkit-scrollbar:vertical{
-    height: max-content;
 }
   
   /* Style du "pouce" de la barre de défilement */
