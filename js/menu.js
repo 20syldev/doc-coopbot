@@ -89,8 +89,9 @@ function switchTheme(theme) {
   localStorage.setItem('selectedTheme', theme);
 }
 
-// Récupérer le thème choisi du stockage local lors du chargement de la page
-var selectedTheme = localStorage.getItem('selectedTheme');
-if (selectedTheme) {
-  switchTheme(selectedTheme);
-}
+document.addEventListener('DOMContentLoaded', function() {
+  var selectedTheme = localStorage.getItem('selectedTheme');
+  if (selectedTheme) {
+    switchTheme(selectedTheme);
+  }
+});
