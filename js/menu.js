@@ -80,9 +80,17 @@ function switchTheme(theme) {
   footer.classList.remove('theme1', 'theme2', 'theme3');
   bar.classList.remove('theme1', 'theme2', 'theme3');
   
-
   leftMenu.classList.add(theme);
   bodycolor.classList.add(theme);
   footer.classList.add(theme);
   bar.classList.add(theme);
+
+  // Stocker le thème choisi dans le stockage local
+  localStorage.setItem('selectedTheme', theme);
+}
+
+// Récupérer le thème choisi du stockage local lors du chargement de la page
+var selectedTheme = localStorage.getItem('selectedTheme');
+if (selectedTheme) {
+  switchTheme(selectedTheme);
 }

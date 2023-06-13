@@ -33,7 +33,8 @@ body {
     background: #131516;
     color: #98a3ad /*Couleur du texte*/;
     line-height: 1.6em;
-    overflow: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 body.theme1 {
@@ -459,7 +460,7 @@ h1 a {
     width: 48%;
 }
 
-ul li::marker {
+#links ul li::marker {
     color: #76a4e4;
     font-size: 1.5em;
   }
@@ -467,16 +468,12 @@ ul li::marker {
 /* Style de base de la barre de défilement */
 ::-webkit-scrollbar {
     margin-left: 50%;
-    height: 10px;
-    width: 15px; 
+    height: 5px;
+    width: 8px; 
     background-color: #292c2f;
     overflow-y: auto;
     overflow-x: hidden;
     position: relative;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
     padding: 10px 10px;
 }
   
@@ -490,12 +487,13 @@ ul li::marker {
 ::-webkit-scrollbar-thumb:hover {
     background-color: #98a3ad;
 }
-  
+
+
 
 #btn1 {
     position: relative;
     margin-left: 20%;
-    margin-top: 0.2%;
+    margin-top: -45%;
     display: block;
     background-color: #27292a;
     width: 70px;
@@ -523,7 +521,7 @@ ul li::marker {
 #btn2 {
     position: relative;
     margin-left: 20%;
-    margin-top: 0.2.2%;
+    margin-top: 0.2%;
     display: block;
     background-color: #27292a;
     width: 70px;
@@ -551,7 +549,7 @@ ul li::marker {
 #btn3 {
     position: relative;
     margin-left: 20%;
-    margin-top: 0.2.2%;
+    margin-top: 0.2%;
     display: block;
     background-color: #27292a;
     width: 70px;
