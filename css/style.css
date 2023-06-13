@@ -467,12 +467,12 @@ h1 a {
 
 .linksList {
     margin-left: 35%;
+    font-size: 1.3em;
 }
 
-.list li::marker {
-    color: #76a4e4;
-    font-size: 2em;
-  }
+.bull{
+    font-size: 1.5em;
+}
 
 ::-webkit-scrollbar {
     margin-left: 50%;
@@ -499,7 +499,7 @@ h1 a {
 #btn1 {
     position: relative;
     margin-left: 20%;
-    margin-top: -45%;
+    margin-top: -55%;
     display: block;
     background-color: #27292a;
     width: 70px;
