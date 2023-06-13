@@ -6,13 +6,13 @@
   <strong>Coop - Bot Discord - Wiki</strong>
   <br><br>
   <a href="https://beacons.ai/coopbot">
-    <img src="https://img.shields.io/badge/Bot :-v1.3.0-6479ee" alt="Bot">
+    <img src="https://img.shields.io/badge/Bot :-v1.3.0-6479ee?labelColor=23272A" alt="Bot">
   </a>
   <a href="https://discord.gg/ASpCdT2JZQ">
-    <img src="https://img.shields.io/discord/1056940597975449710?logo=discord&color=5e60ce" alt="Discord">
+    <img src="https://img.shields.io/discord/1056940597975449710?logo=discord&labelColor=23272A&label=Discord&color=5e60ce" alt="Discord">
   </a>
   <a href="https://github.io/20syldev/doc-coopbot">
-    <img src="https://img.shields.io/badge/Wiki :-v0.9.6-6479ee" alt="Wiki">
+    <img src="https://img.shields.io/badge/Wiki :-v0.9.6-6479ee?labelColor=23272A" alt="Wiki">
   </a>
 </div>
 
