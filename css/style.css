@@ -51,6 +51,11 @@ body.theme3 {
     color: #bcbdd0;
 }
 
+hr {
+    margin-left: 35%;
+    width: 48.5%; 
+}
+
 a {
     color: #67aff3 /*Couleur des sous-titres*/;
 }
@@ -433,10 +438,17 @@ h1 a {
     font-weight: bolder;
 }
 
-.sub {
+.sub0 {
     margin-left: 35%;
     font-family: 'Open Sans', sans-serif;
-    font-size: 1.5em;
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.sub1 {
+    margin-left: 35%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6em;
     font-weight: 600;
 }
 
@@ -446,6 +458,11 @@ h1 a {
     font-size: 1.35em;
     width: 48%;
 }
+
+ul li::marker {
+    color: #76a4e4;
+    font-size: 1.5em;
+  }
 
 /* Style de base de la barre de défilement */
 ::-webkit-scrollbar {
