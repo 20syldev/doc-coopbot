@@ -177,6 +177,7 @@ h1 a {
 .menu-items {
     padding: 5px;
     margin: 0;
+    margin-top: 5%;
     list-style: none;
     opacity: 0;
     animation: fade-in 0.3s ease-in-out;
@@ -211,7 +212,7 @@ h1 a {
 }
 
   
-#bar {
+#bar1 {
     margin-left: 5px;
     width: 280px;
     height: 3.5px;
@@ -222,15 +223,38 @@ h1 a {
     margin-bottom: 10px;
 }
 
-#bar.theme1 {
+#bar1.theme1 {
     background-color: #393939;
 }
 
-#bar.theme2 {
+#bar1.theme2 {
     background-color: #434343;
 }
 
-#bar.theme3 {
+#bar1.theme3 {
+    background-color: #4b5d94;
+}
+
+#bar2 {
+    margin-left: 5px;
+    width: 280px;
+    height: 3.5px;
+    background-color: #393939;
+    position: relative;
+    top: 0.9%;
+    transform: translateY(-50%);
+    margin-bottom: 10px;
+}
+
+#bar2.theme1 {
+    background-color: #393939;
+}
+
+#bar2.theme2 {
+    background-color: #434343;
+}
+
+#bar2.theme3 {
     background-color: #4b5d94;
 }
 
@@ -499,12 +523,12 @@ h1 a {
 
 #btn1 {
     position: absolute;
-    margin-left: 75%;
-    margin-top: 8.5%;
-    display: block;
+    margin-left: 10%;
+    margin-top: 3.5%;
+    display: inline;
     background-color: #212325;
     width: 70px;
-    height: 25px;
+    height: 20px;
     color: #a1adb8;
     font-weight: bold;
     text-align: center;
@@ -527,12 +551,12 @@ h1 a {
 
 #btn2 {
     position: absolute;
-    margin-left: 75%;
-    margin-top: 18.5%;
-    display: block;
+    margin-left: 40%;
+    margin-top: 3.5%;
+    display: inline;
     background-color: #212325;
     width: 70px;
-    height: 25px;
+    height: 20px;
     color: #a1adb8;
     font-weight: bold;
     text-align: center;
@@ -555,12 +579,12 @@ h1 a {
 
 #btn3 {
     position: absolute;
-    margin-left: 75%;
-    margin-top: 28.5%;
-    display: block;
+    margin-left: 70%;
+    margin-top: 3.5%;
+    display: inline;
     background-color: #212325;
     width: 70px;
-    height: 25px;
+    height: 20px;
     color: #a1adb8;
     font-weight: bold;
     text-align: center;
