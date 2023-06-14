@@ -4,7 +4,7 @@ function toggleCommandsColumn1() {
   var commandsColumn = document.getElementById("commands-column1");
   var toggleButton = document.querySelector(".toggle1");
 
-  if (commandsColumnVisible1 == true) {
+  if (commandsColumnVisible1) {
     commandsColumn.style.display = "none";
     toggleButton.classList.remove("rotate");
     toggleButton.classList.add("reverse");
@@ -16,7 +16,7 @@ function toggleCommandsColumn1() {
 
   commandsColumnVisible1 = !commandsColumnVisible1;
 
-  localStorage.setItem('selectedMenu1', !commandsColumnVisible1);
+  localStorage.setItem('selectedMenu1', commandsColumnVisible1);
 }
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -31,7 +31,7 @@ function toggleCommandsColumn2() {
   var commandsColumn = document.getElementById("commands-column2");
   var toggleButton = document.querySelector(".toggle2");
 
-  if (commandsColumnVisible2 == true) {
+  if (commandsColumnVisible2) {
     commandsColumn.style.display = "none";
     toggleButton.classList.remove("rotate");
     toggleButton.classList.add("reverse");
@@ -49,7 +49,7 @@ function toggleCommandsColumn3() {
   var commandsColumn = document.getElementById("commands-column3");
   var toggleButton = document.querySelector(".toggle3");
 
-  if (commandsColumnVisible3 == true) {
+  if (commandsColumnVisible3) {
     commandsColumn.style.display = "none";
     toggleButton.classList.remove("rotate");
     toggleButton.classList.add("reverse");
@@ -67,7 +67,7 @@ function toggleCommandsColumn4() {
   var commandsColumn = document.getElementById("commands-column4");
   var toggleButton = document.querySelector(".toggle4");
 
-  if (commandsColumnVisible4 == true) {
+  if (commandsColumnVisible4) {
     commandsColumn.style.display = "none";
     toggleButton.classList.remove("rotate");
     toggleButton.classList.add("reverse");
@@ -110,23 +110,3 @@ document.addEventListener('DOMContentLoaded', function() {
     switchTheme(selectedTheme);
   }
 });
-
-
-// Obtenez l'URL de la page actuelle
-var url = window.location.pathname;
-
-// Sélectionnez tous les liens de sous-catégorie
-var subCategoryLinks = document.querySelectorAll('nav ul ul li a');
-
-// Parcourez les liens de sous-catégorie pour trouver celui correspondant à la page actuelle
-for (var i = 0; i < subCategoryLinks.length; i++) {
-  var link = subCategoryLinks[i];
-  if (link.getAttribute('href') === url) {
-    // Ajoutez une classe "active" à la sous-catégorie correspondante
-    link.parentNode.classList.add('active');
-    
-    // Ouvrez la sous-catégorie en définissant son parent (li) en tant qu'élément actif
-    link.parentNode.parentNode.parentNode.classList.add('active');
-    break;
-  }
-}
