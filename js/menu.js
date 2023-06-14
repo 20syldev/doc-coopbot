@@ -4,7 +4,7 @@ function toggleCommandsColumn1() {
   var commandsColumn = document.getElementById("commands-column1");
   var toggleButton = document.querySelector(".toggle1");
 
-  if (commandsColumnVisible1) {
+  if (commandsColumnVisible1 == true) {
     commandsColumn.style.display = "none";
     toggleButton.classList.remove("rotate");
     toggleButton.classList.add("reverse");
@@ -15,13 +15,23 @@ function toggleCommandsColumn1() {
   }
 
   commandsColumnVisible1 = !commandsColumnVisible1;
+
+  localStorage.setItem('selectedMenu1', commandsColumnVisible1);
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+  var selectedMenu1 = localStorage.getItem('selectedMenu1');
+  if (selectedMenu1 == true) {
+    toggleCommandsColumn1();
+  }
+});
+
 
 function toggleCommandsColumn2() {
   var commandsColumn = document.getElementById("commands-column2");
   var toggleButton = document.querySelector(".toggle2");
 
-  if (commandsColumnVisible2) {
+  if (commandsColumnVisible2 == true) {
     commandsColumn.style.display = "none";
     toggleButton.classList.remove("rotate");
     toggleButton.classList.add("reverse");
@@ -34,11 +44,12 @@ function toggleCommandsColumn2() {
   commandsColumnVisible2 = !commandsColumnVisible2;
 }
 
+
 function toggleCommandsColumn3() {
   var commandsColumn = document.getElementById("commands-column3");
   var toggleButton = document.querySelector(".toggle3");
 
-  if (commandsColumnVisible3) {
+  if (commandsColumnVisible3 == true) {
     commandsColumn.style.display = "none";
     toggleButton.classList.remove("rotate");
     toggleButton.classList.add("reverse");
@@ -51,11 +62,12 @@ function toggleCommandsColumn3() {
   commandsColumnVisible3 = !commandsColumnVisible3;
 }
 
+
 function toggleCommandsColumn4() {
   var commandsColumn = document.getElementById("commands-column4");
   var toggleButton = document.querySelector(".toggle4");
 
-  if (commandsColumnVisible4) {
+  if (commandsColumnVisible4 == true) {
     commandsColumn.style.display = "none";
     toggleButton.classList.remove("rotate");
     toggleButton.classList.add("reverse");
