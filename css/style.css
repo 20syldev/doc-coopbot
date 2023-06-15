@@ -208,7 +208,7 @@ h1 a {
 }
 
 .menu-items li a:hover {
-    color: #5791e2;
+    color: #8d93dd;
 }
 
   
@@ -459,7 +459,7 @@ h1 a {
 }
 
 #menucolor0 a:hover {
-    color: #6e74be;
+    color: #8d93dd;
 }
 
 #menucolor1 a {
@@ -467,7 +467,7 @@ h1 a {
 }
 
 #menucolor1 a:hover {
-    color: #6e74be;
+    color: #8d93dd;
 }
 
 .titleHome {
@@ -632,4 +632,11 @@ h1 a {
     font-family: 'Open Sans', sans-serif;
     font-size: 1.35em;
     width: 47.5%;
+}
+
+.codetxt {
+    background-color: #252a3e;
+    font-size: 1.2em;
+    font-weight: 600;
+    border-radius: 3px;
 }
