@@ -21,7 +21,7 @@ function toggleCommandsColumn1() {
 
 document.addEventListener('DOMContentLoaded', function() {
   var selectedMenu1 = localStorage.getItem('selectedMenu1');
-  if (selectedMenu1 == true) {
+  if (selectedMenu1 == false) {
     toggleCommandsColumn1();
   }
 });
@@ -42,7 +42,16 @@ function toggleCommandsColumn2() {
   }
 
   commandsColumnVisible2 = !commandsColumnVisible2;
+
+  localStorage.setItem('selectedMenu2', commandsColumnVisible2);
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+  var selectedMenu2 = localStorage.getItem('selectedMenu2');
+  if (selectedMenu2 == false) {
+    toggleCommandsColumn2();
+  }
+});
 
 
 function toggleCommandsColumn3() {
@@ -60,7 +69,16 @@ function toggleCommandsColumn3() {
   }
 
   commandsColumnVisible3 = !commandsColumnVisible3;
+
+  localStorage.setItem('selectedMenu3', commandsColumnVisible3);
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+  var selectedMenu3 = localStorage.getItem('selectedMenu3');
+  if (selectedMenu3 == false) {
+    toggleCommandsColumn3();
+  }
+});
 
 
 function toggleCommandsColumn4() {
@@ -78,7 +96,16 @@ function toggleCommandsColumn4() {
   }
 
   commandsColumnVisible4 = !commandsColumnVisible4;
+
+  localStorage.setItem('selectedMenu4', commandsColumnVisible4);
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+  var selectedMenu4 = localStorage.getItem('selectedMenu4');
+  if (selectedMenu4 == false) {
+    toggleCommandsColumn4();
+  }
+});
 
 
 function switchTheme(theme) {
