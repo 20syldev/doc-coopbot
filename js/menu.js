@@ -1,4 +1,4 @@
-var commandsColumnVisible1, commandsColumnVisible2, commandsColumnVisible3, commandsColumnVisible4 = true;
+var commandsColumnVisible1, commandsColumnVisible2, commandsColumnVisible3, commandsColumnVisible4 = false;
 
 function toggleCommandsColumn1() {
   var commandsColumn = document.getElementById("commands-column1");
@@ -21,7 +21,7 @@ function toggleCommandsColumn1() {
 
 document.addEventListener('DOMContentLoaded', function() {
   var selectedMenu1 = localStorage.getItem('selectedMenu1');
-  if (selectedMenu1 == false) {
+  if (selectedMenu1 == true) {
     toggleCommandsColumn1();
   }
 });
@@ -48,7 +48,7 @@ function toggleCommandsColumn2() {
 
 document.addEventListener('DOMContentLoaded', function() {
   var selectedMenu2 = localStorage.getItem('selectedMenu2');
-  if (selectedMenu2 == false) {
+  if (selectedMenu2 == true) {
     toggleCommandsColumn2();
   }
 });
@@ -75,7 +75,7 @@ function toggleCommandsColumn3() {
 
 document.addEventListener('DOMContentLoaded', function() {
   var selectedMenu3 = localStorage.getItem('selectedMenu3');
-  if (selectedMenu3 == false) {
+  if (selectedMenu3 == true) {
     toggleCommandsColumn3();
   }
 });
@@ -102,7 +102,7 @@ function toggleCommandsColumn4() {
 
 document.addEventListener('DOMContentLoaded', function() {
   var selectedMenu4 = localStorage.getItem('selectedMenu4');
-  if (selectedMenu4 == false) {
+  if (selectedMenu4 == true) {
     toggleCommandsColumn4();
   }
 });
