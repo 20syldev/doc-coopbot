@@ -258,6 +258,23 @@ h1 a {
     background-color: #4b5d94;
 }
 
+@keyframes rotateInAnimation {
+    from {
+      transform: translate(-50%, -100%) rotate(0deg);
+    }
+    to {
+      transform: translate(-50%, -100%) rotate(90deg);
+    }
+}
+  
+@keyframes rotateOutAnimation {
+    from {
+      transform: translate(-50%, -100%) rotate(90deg);
+    }
+    to {
+      transform: translate(-50%, -100%) rotate(0deg);
+    }
+}
 
 .toggle1 {
     position: relative;
@@ -280,24 +297,6 @@ h1 a {
   
 .toggle1.reverse div {
     animation: rotateOutAnimation 0.3s ease-in-out forwards;
-}
-  
-@keyframes rotateInAnimation {
-    from {
-      transform: translate(-50%, -100%) rotate(0deg);
-    }
-    to {
-      transform: translate(-50%, -100%) rotate(90deg);
-    }
-}
-  
-@keyframes rotateOutAnimation {
-    from {
-      transform: translate(-50%, -100%) rotate(90deg);
-    }
-    to {
-      transform: translate(-50%, -100%) rotate(0deg);
-    }
 }
 
 
@@ -323,24 +322,6 @@ h1 a {
 .toggle2.reverse div {
     animation: rotateOutAnimation 0.3s ease-in-out forwards;
 }
-  
-@keyframes rotateInAnimation {
-    from {
-      transform: translate(-50%, -100%) rotate(0deg);
-    }
-    to {
-      transform: translate(-50%, -100%) rotate(90deg);
-    }
-}
-  
-@keyframes rotateOutAnimation {
-    from {
-      transform: translate(-50%, -100%) rotate(90deg);
-    }
-    to {
-      transform: translate(-50%, -100%) rotate(0deg);
-    }
-}
 
 
 .toggle3 {
@@ -365,24 +346,6 @@ h1 a {
 .toggle3.reverse div {
     animation: rotateOutAnimation 0.3s ease-in-out forwards;
 }
-  
-@keyframes rotateInAnimation {
-    from {
-      transform: translate(-50%, -100%) rotate(0deg);
-    }
-    to {
-      transform: translate(-50%, -100%) rotate(90deg);
-    }
-}
-  
-@keyframes rotateOutAnimation {
-    from {
-      transform: translate(-50%, -100%) rotate(90deg);
-    }
-    to {
-      transform: translate(-50%, -100%) rotate(0deg);
-    }
-}
 
 
 .toggle4 {
@@ -406,24 +369,6 @@ h1 a {
   
 .toggle4.reverse div {
     animation: rotateOutAnimation 0.3s ease-in-out forwards;
-}
-  
-@keyframes rotateInAnimation {
-    from {
-      transform: translate(-50%, -100%) rotate(0deg);
-    }
-    to {
-      transform: translate(-50%, -100%) rotate(90deg);
-    }
-}
-  
-@keyframes rotateOutAnimation {
-    from {
-      transform: translate(-50%, -100%) rotate(90deg);
-    }
-    to {
-      transform: translate(-50%, -100%) rotate(0deg);
-    }
 }
 
 .openmenu {
