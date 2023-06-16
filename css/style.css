@@ -581,8 +581,41 @@ h1 a {
 }
 
 .codetxt {
-    background-color: #252a3e;
+    user-select: none;
+    background-color: #5865f2d6;
+    color: #dddddd;
     font-size: 1.2em;
     font-weight: 600;
     border-radius: 3px;
+}
+
+.codetxt:hover {
+    background-color: #5865f2;
+    color: #ffffff;
+}
+
+.blockcode {
+    user-select: none;
+    background-color: #000000;
+    color: #dddddd;
+    padding: 1.5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-color: #5865f2d6;
+    border-style: solid;
+    border-width: 1.5px;
+    border-radius: 3px;
+}
+
+.blockcommand {
+    user-select: none;
+    background-color: #292c2f;
+    font-size: 1.1em;
+    padding: 1.5px;
+    padding-left: 5px;
+    padding-right: 0;
+    border-color: #292c2f;
+    border-style: solid;
+    border-width: 1.5px;
+    border-radius: 7px;
 }
