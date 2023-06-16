@@ -16,13 +16,17 @@ function toggleCommandsColumn1() {
 
   commandsColumnVisible1 = !commandsColumnVisible1;
 
-  localStorage.setItem('selectedMenu1', commandsColumnVisible1);
+  localStorage.setItem('selectedMenu1', JSON.stringify(commandsColumnVisible1));
 }
 
 document.addEventListener('DOMContentLoaded', function() {
   var selectedMenu1 = localStorage.getItem('selectedMenu1');
-  if (selectedMenu1 == false) {
-    toggleCommandsColumn1();
+  if (selectedMenu1 !== null) {
+    selectedMenu1 = JSON.parse(selectedMenu1);
+    commandsColumnVisible1 = selectedMenu1;
+    if (!selectedMenu1) {
+      toggleCommandsColumn1();
+    }
   }
 });
 
@@ -43,13 +47,17 @@ function toggleCommandsColumn2() {
 
   commandsColumnVisible2 = !commandsColumnVisible2;
 
-  localStorage.setItem('selectedMenu2', commandsColumnVisible2);
+  localStorage.setItem('selectedMenu2', JSON.stringify(commandsColumnVisible2));
 }
 
 document.addEventListener('DOMContentLoaded', function() {
   var selectedMenu2 = localStorage.getItem('selectedMenu2');
-  if (selectedMenu2 == false) {
-    toggleCommandsColumn2();
+  if (selectedMenu2 !== null) {
+    selectedMenu2 = JSON.parse(selectedMenu2);
+    commandsColumnVisible2 = selectedMenu2;
+    if (!selectedMenu2) {
+      toggleCommandsColumn2();
+    }
   }
 });
 
@@ -70,13 +78,17 @@ function toggleCommandsColumn3() {
 
   commandsColumnVisible3 = !commandsColumnVisible3;
 
-  localStorage.setItem('selectedMenu3', commandsColumnVisible3);
+  localStorage.setItem('selectedMenu3', JSON.stringify(commandsColumnVisible3));
 }
 
 document.addEventListener('DOMContentLoaded', function() {
   var selectedMenu3 = localStorage.getItem('selectedMenu3');
-  if (selectedMenu3 == false) {
-    toggleCommandsColumn3();
+  if (selectedMenu3 !== null) {
+    selectedMenu3 = JSON.parse(selectedMenu3); // Convertir en booléen
+    commandsColumnVisible3 = selectedMenu3;
+    if (!selectedMenu3) {
+      toggleCommandsColumn3();
+    }
   }
 });
 
@@ -97,13 +109,17 @@ function toggleCommandsColumn4() {
 
   commandsColumnVisible4 = !commandsColumnVisible4;
 
-  localStorage.setItem('selectedMenu4', commandsColumnVisible4);
+  localStorage.setItem('selectedMenu4', JSON.stringify(commandsColumnVisible4));
 }
 
 document.addEventListener('DOMContentLoaded', function() {
   var selectedMenu4 = localStorage.getItem('selectedMenu4');
-  if (selectedMenu4 == false) {
-    toggleCommandsColumn4();
+  if (selectedMenu4 !== null) {
+    selectedMenu4 = JSON.parse(selectedMenu4); // Convertir en booléen
+    commandsColumnVisible4 = selectedMenu4;
+    if (!selectedMenu4) {
+      toggleCommandsColumn4();
+    }
   }
 });
 
