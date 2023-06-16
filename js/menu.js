@@ -112,7 +112,7 @@ function toggleCommandsColumn4() {
 document.addEventListener('DOMContentLoaded', function() {
   var selectedMenu4 = localStorage.getItem('selectedMenu4');
   if (selectedMenu4 !== null) {
-    selectedMenu4 = JSON.parse(selectedMenu4); // Convertir en booléen
+    selectedMenu4 = JSON.parse(selectedMenu4);
     if (selectedMenu4) {
       toggleCommandsColumn4();
     }
