@@ -594,6 +594,19 @@ h1 a {
     color: #ffffff;
 }
 
+.mentionuser {
+    user-select: none;
+    background-color: #5865f2d6;
+    color: #dddddd;
+    font-weight: 550;
+    border-radius: 3px;
+}
+
+.mentionuser:hover {
+    background-color: #5865f2;
+    color: #ffffff;
+}
+
 .blockcode {
     user-select: none;
     background-color: #191919;
@@ -622,12 +635,4 @@ h1 a {
 
 .underline {
     text-decoration: underline;
-}
-
-.mentionuser {
-    user-select: none;
-    background-color: #5865f2d6;
-    color: #dddddd;
-    font-weight: 400;
-    border-radius: 3px;
 }
