@@ -1,6 +1,6 @@
 <div align="center">
   <a href="https://beacons.ai/coopbot">
-    <img src="https://i.postimg.cc/gJJ9wB58/Coop-Bot-Lettre-Unique.png" alt="Coop Bot GIF" style="width: 25%;">
+    <img src="https://i.postimg.cc/gJJ9wB58/Coop-Bot-Lettre-Unique.png" alt="Coop Bot" style="width: 25%;">
   </a>
   <br>
   <strong>Coop - Bot Discord - Wiki</strong>
