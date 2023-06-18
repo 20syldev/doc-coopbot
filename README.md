@@ -3,8 +3,7 @@
     <img src="https://i.postimg.cc/gJJ9wB58/Coop-Bot-Lettre-Unique.png" alt="Coop Bot" style="width: 25%;">
   </a>
   <br>
-  <strong>Coop - Bot Discord - Wiki</strong>
-  <br><br>
+  <h2>Coop - Bot Discord - Wiki</h2>
   <a href="https://beacons.ai/coopbot">
     <img src="https://img.shields.io/badge/Bot :-v1.3.0-6479ee?labelColor=23272A" alt="Bot">
   </a>
