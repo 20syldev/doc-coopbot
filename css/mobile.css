@@ -31,7 +31,7 @@ address {
 body {
     font: .74em 'Open Sans', Sans-Serif;
     background: #131516;
-    color: #98a3ad /*Couleur du texte*/;
+    color: #98a3ad;
     line-height: 1.6em;
     overflow-y: auto;
     overflow-x: hidden;
@@ -58,15 +58,15 @@ hr {
 }
 
 a {
-    color: #76a4e4 /*Couleur des sous-titres*/;
+    color: #76a4e4;
 }
 
 a:hover {
-    color: #76a4e4 /*Couleur des sous-titres quand la souris passe dessus*/;
+    color: #76a4e4;
 }
 
 .list a:hover {
-    color: #adc6f1 /*Couleur des liens quand la souris passe dessus*/;
+    color: #adc6f1;
     text-decoration: underline;
 }
 
@@ -90,7 +90,7 @@ h1 {
 }
 
 h1 a {
-    color: #ffffff /*Couleur du titre*/;
+    color: #ffffff;
 }
 
 #footer {
@@ -201,7 +201,7 @@ h1 a {
 }
 
 .menu-items li a {
-    font-size: 1.185em;
+    font-size: 2.3em;
     display: block;
     color: #a1adb8;
     transition: color 0.3s ease-in-out;
