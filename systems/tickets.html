@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<.DOCTYPE html>
 <html>
 <head>
     <title>Tickets - Coop Bot - Wiki</title>
@@ -23,7 +23,125 @@
 
   <span class="titleHome"><a href="tickets">Système de tickets</a></span>
   <br><br><br>
-  <p class="sub2">Il n'y a rien ici pour le moment, la page est en cours de création. Rendez-vous à <span class="list"><a href="../home">l'accueil</a></span> pour le moment !</p>
+  <p class="sub2">
+    <b class="underline">Commande d'ouverture d'un ticket</b>
+    <br><br>
+    La commande <code class="blockcommand"><b>.open</b>&nbsp;</code> permet à un utilisateur d'ouvrir un ticket.
+    <br>
+    Il est important de noter qu'il faut d'abord activer le système de tickets pour utiliser cette commande. 
+    <br><br>
+    <span class="list">&nbsp; <span class="bull">&#x25CF;</span> &nbsp;&nbsp;Utilisation : <code class="blockcommand"><b>.open</b>&nbsp;</code>
+    
+    <br><br><br><br>
+    
+    <b class="underline">Commande de fermeture d'un ticket</b>
+    <br><br>
+    Vous pouvez fermer un ticket grâce à la commande <code class="codetxt">/close</code> ou <code class="blockcommand"><b>.close</b>&nbsp;</code>.
+    <br>
+    Lorsqu'un ticket est fermé, cela signifie généralement que le problème ou la question a été résolu ou que le sujet du ticket n'est plus d'actualité. 
+    <br><br>
+    Une fois fermé, le ticket peut ne plus être accessible pour les utilisateurs réguliers, mais il peut être archivé pour référence future par le staff.
+    <br><br>
+    <span class="list">&nbsp; <span class="bull">&#x25CF;</span> &nbsp;&nbsp;Utilisation : <code class="codetxt">/close</code> ou <code class="blockcommand"><b>.close</b>&nbsp;</code>
+    
+    <br><br><br><br>
+    
+    <b class="underline">Commande de gestion d'un ticket</b>
+    <br><br>
+    La commande <code class="codetxt">/manage</code> ou <code class="blockcommand"><b>.manage</b>&nbsp;</code> permet au staff de gérer un ticket.
+    <br>
+    Elle envoie un embed qui inclut diverses fonctionnalités, telles que la modification des paramètres du ticket, la modification de l'état du ticket, etc.
+    <br><br>
+    <span class="list">&nbsp; <span class="bull">&#x25CF;</span> &nbsp;&nbsp;Utilisation : <code class="codetxt">/manage</code> ou <code class="blockcommand"><b>.manage</b>&nbsp;</code>
+    
+    <br><br><br><br>
+    
+    <b class="underline">Commande d'envoi du panel de ticket</b>
+    <br><br>
+    La commande <code class="codetxt">/panel</code> ou <code class="blockcommand"><b>.panel</b>&nbsp;</code> permet au staff de créer et d'envoyer un panel de tickets dans le salon où on se trouve. 
+    <br>
+    Un panneau de tickets peut être une interface visuelle ou un message incorporé contenant des informations sur les tickets ouverts, les détails du ticket, les réponses du staff, etc.
+    <br><br>
+    Cela peut aider à organiser et à visualiser les tickets de manière plus conviviale pour le staff.
+    <br><br>
+    <span class="list">&nbsp; <span class="bull">&#x25CF;</span> &nbsp;&nbsp;Utilisation : <code class="codetxt">/panel</code> ou <code class="blockcommand"><b>.panel</b>&nbsp;</code>
+    
+    <br><br><br><br>
+    
+    <b class="underline">Commande d'activation du système de tickets</b>
+    <br><br>
+    Vous pouvez activer le système de tickets grâce à la commande <code class="blockcommand"><b>.t-enable</b>&nbsp;</code>.
+    <br>
+    Si le système de tickets est désactivé, les utilisateurs ne pourront pas ouvrir de nouveaux tickets et le staff ne pourra pas les gérer.
+    <br><br>
+    En utilisant cette commande, le staff peut activer le système de tickets pour permettre son utilisation.
+    <br><br>
+    <span class="list">&nbsp; <span class="bull">&#x25CF;</span> &nbsp;&nbsp;Utilisation : <code class="blockcommand"><b>.t-enable</b>&nbsp;</code>
+    
+    <br><br><br><br>
+    
+    <b class="underline">Commande de désactivation du système de tickets</b>
+    <br><br>
+    La commande <code class="blockcommand"><b>.t-disable</b>&nbsp;</code> permet de désactiver le système de tickets.
+    <br>
+    Lorsque le système de tickets est désactivé, les utilisateurs ne pourront pas ouvrir de nouveaux tickets et le staff ne pourra pas les gérer. 
+    <br><br>
+    Cette commande peut être utilisée si vous souhaitez temporairement suspendre le système de tickets ou si vous avez besoin de faire des modifications importantes.
+    <br><br>
+    <span class="list">&nbsp; <span class="bull">&#x25CF;</span> &nbsp;&nbsp;Utilisation : <code class="blockcommand"><b>.t-disable</b>&nbsp;</code>
+    
+    <br><br><br><br>
+    
+    <b class="underline">Commande de sélection de catégorie du système de tickets</b>
+    <br><br>
+    Avec la commande <code class="blockcommand"><b>.t-setcategory</b>&nbsp;</code>, vous pouvez sélectionner la catégorie dans laquelle les tickets seront créés. 
+    <br>
+    L'identifiant de la catégorie doit être fourni en paramètre.
+    <br><br>
+    Vous pouvez donc choisir une catégorie spécifique pour les tickets afin de les regrouper et de les distinguer des autres canaux du serveur.
+    <br><br>
+    <span class="list">&nbsp; <span class="bull">&#x25CF;</span> &nbsp;&nbsp;Utilisation : <code class="blockcommand"><b>.t-setcategory ID&nbsp;</b></code>
+    <br><br>
+    <span class="list">&nbsp; <span class="bull">&#x25CF;</span> &nbsp;&nbsp;Exemple : <code class="blockcommand"><b>.t-setcategory 1084583013372940389&nbsp;</b></code>
+    
+    <br><br><br><br>
+    
+    <b class="underline">Commande de désélection de catégorie du système de tickets</b>
+    <br><br>
+    La commande <code class="blockcommand"><b>.t-rmcategory</b>&nbsp;</code> permet de désélectionner la catégorie dans laquelle les tickets sont créés. 
+    <br>
+    Si vous ne souhaitez plus utiliser de catégorie spécifique pour les tickets, vous pouvez utiliser cette commande pour supprimer la sélection de catégorie.
+    <br><br>
+    <span class="list">&nbsp; <span class="bull">&#x25CF;</span> &nbsp;&nbsp;Utilisation : <code class="blockcommand"><b>.t-rmcategory</b>&nbsp;</code>
+    
+    <br><br><br><br>
+
+    <b class="underline">Commande de sélection du rôle manager</b>
+    <br><br>
+    Avec <code class="blockcommand"><b>.t-setstaff</b>&nbsp;</code>, vous pouvez sélectionner le rôle qui aura la possibilité de gérer les tickets.
+    <br>
+    Vous devez mentionner le rôle en utilisant l'identifiant de rôle ou en utilisant la mention de rôle.
+    <br><br>
+    Seuls les utilisateurs ayant ce rôle pourront effectuer des opérations de gestion sur les tickets, telles que la fermeture, la réponse, etc.
+    <br><br>
+    <span class="list">&nbsp; <span class="bull">&#x25CF;</span> &nbsp;&nbsp;Utilisation : <code class="blockcommand"><b>.t-setstaff </b><code class="mentionuser">@membre</code></code>
+    <br><br>
+    <span class="list">&nbsp; <span class="bull">&#x25CF;</span> &nbsp;&nbsp;Exemple : <code class="blockcommand"><b>.t-setstaff </b><code class="mentionuser">@20syl</code></code>
+
+    <br><br><br><br>
+
+    <b class="underline">Commande de désélection du rôle manager</b>
+    <br><br>
+    Vous pouvez utiliser la commande <code class="blockcommand"><b>.t-rmstaff</b>&nbsp;</code> pour désélectionner le rôle qui a été précédemment sélectionné pour gérer les tickets.
+    <br>
+    Si vous ne souhaitez plus qu'un rôle spécifique puisse gérer les tickets, vous pouvez utiliser cette commande pour le supprimer de la sélection.
+    <br><br>
+    <span class="list">&nbsp; <span class="bull">&#x25CF;</span> &nbsp;&nbsp;Utilisation : <code class="blockcommand"><b>.t-rmstaff</b>&nbsp;</code>
+
+    <br><br><hr><br><br>
+
+    <blockquote class="block">Ces commandes constituent un ensemble de fonctionnalités de base pour un système de tickets de bot Discord. Vous pouvez personnaliser votre serveur et implémenter des fonctionnalités supplémentaires pour répondre aux exigences spécifiques de votre serveur Discord.</blockquote>
+  </p>
   <br><br><br>
   </ul>
 
