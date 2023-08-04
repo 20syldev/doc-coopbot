@@ -642,6 +642,7 @@ h1 a {
 }
 
 .showExample {
-    border-radius: 10px;
-    width: 480px;
+    border-radius: 15px;
+    width: 500px;
+    margin-right: 100%;
 }
