@@ -641,8 +641,14 @@ h1 a {
     text-decoration: underline;
 }
 
-.showExample {
+.showExampleRound {
     border-radius: 15px;
+    width: 500px;
+    margin-right: 100%;
+}
+
+.showExample {
+    border-radius: 5px;
     width: 500px;
     margin-right: 100%;
 }
