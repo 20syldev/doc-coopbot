@@ -640,3 +640,8 @@ h1 a {
 .underline {
     text-decoration: underline;
 }
+
+.showExample {
+    border-radius: 10px;
+    width: 480px;
+}
