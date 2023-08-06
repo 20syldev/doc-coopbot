@@ -149,3 +149,19 @@ document.addEventListener('DOMContentLoaded', function() {
     switchTheme(selectedTheme);
   }
 });
+
+
+function copyContent(button) {
+  try {
+    const copyText = button.getAttribute("data-link");
+    navigator.clipboard.writeText(copyText);
+
+    button.classList.add("copied");
+
+    setTimeout(function () {
+      button.classList.remove("copied");
+    }, 2000); 
+  } catch (err) {
+    console.error("Échec de la copie : ", err);
+  }
+}
