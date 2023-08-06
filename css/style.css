@@ -637,6 +637,19 @@ h1 a {
     border-radius: 7px;
 }
 
+.blockcommandSelect {
+    background-color: #292c2f;
+    color: #dddddd;
+    font-size: 1.1em;
+    padding: 1.5px;
+    padding-left: 5px;
+    padding-right: 0;
+    border-color: #292c2f;
+    border-style: solid;
+    border-width: 1.5px;
+    border-radius: 7px;
+}
+
 .underline {
     text-decoration: underline;
 }
@@ -651,4 +664,30 @@ h1 a {
     border-radius: 5px;
     width: 500px;
     margin-right: 100%;
+}
+
+.copyBtn {
+    width: 24px;
+    height: 24px;
+    padding-top: 3.5px;
+    border: none;
+    background-color: #539dcf;
+    color: white;
+    border-radius: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.copyBtn img {
+    width: 16px;
+    height: 16px;
+    margin: -2.5px;
+}
+
+.copyBtn:hover {
+    background-color: #86c1e8;
+}
+
+.copyBtn.copied {
+    background-color: #92febc;
 }
