@@ -613,6 +613,13 @@ h1 a {
     color: #ffffff;
 }
 
+.roleBlock {
+    user-select: none;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 4px;
+}
+
 .blockcode {
     user-select: none;
     background-color: #191919;
@@ -692,4 +699,25 @@ h1 a {
 
 .copyBtn.copied {
     background-color: #92febc;
+}
+
+.premium {
+    background: linear-gradient(45deg, #ffce6b, #dabe63);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.plus {
+    background: linear-gradient(45deg, #86f48a, #77f6b4);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.standard {
+    background: linear-gradient(45deg, #fba5f4, #d695ff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
 }
