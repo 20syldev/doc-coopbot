@@ -611,6 +611,13 @@ h1 a {
     color: #ffffff;
 }
 
+.roleBlock {
+    user-select: none;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 4px;
+}
+
 .blockcode {
     user-select: none;
     background-color: #191919;
