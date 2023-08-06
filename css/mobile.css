@@ -663,6 +663,12 @@ h1 a {
     text-decoration: underline;
 }
 
+.showExampleRound2 {
+    border-radius: 25px;
+    width: 500px;
+    margin-right: 100%;
+}
+
 .showExampleRound {
     border-radius: 15px;
     width: 500px;
