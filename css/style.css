@@ -580,6 +580,23 @@ h1 a {
     width: 53.3%;
 }
 
+.codetxt {
+    user-select: none;
+    background-color: #5865f2d6;
+    color: #dddddd;
+    font-size: 1.15em;
+    font-weight: 600;
+    border-radius: 3px;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.codetxt:hover {
+    text-decoration: none;
+    background-color: #5865f2;
+    color: #ffffff;
+}
+
 .codetxt a {
     user-select: none;
     background-color: #5865f2d6;
