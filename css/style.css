@@ -580,7 +580,7 @@ h1 a {
     width: 53.3%;
 }
 
-.codetxt {
+.codetxt a {
     user-select: none;
     background-color: #5865f2d6;
     color: #dddddd;
@@ -591,10 +591,12 @@ h1 a {
     padding-right: 2px;
 }
 
-.codetxt:hover {
+.codetxt:hover a {
+    text-decoration: none;
     background-color: #5865f2;
     color: #ffffff;
 }
+
 
 .mentionuser {
     user-select: none;
