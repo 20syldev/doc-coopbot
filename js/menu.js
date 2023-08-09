@@ -139,7 +139,6 @@ function switchTheme(theme) {
   bar1.classList.add(theme);
   bar2.classList.add(theme);
 
-  // Stocker le thème choisi dans le stockage local
   localStorage.setItem('selectedTheme', theme);
 }
 
@@ -153,15 +152,32 @@ document.addEventListener('DOMContentLoaded', function() {
 
 function copyContent(button) {
   try {
-    const copyText = button.getAttribute("data-link");
-    navigator.clipboard.writeText(copyText);
+      const copyText = button.getAttribute("data-link");
+      navigator.clipboard.writeText(copyText);
 
-    button.classList.add("copied");
+      button.classList.add("copied");
 
-    setTimeout(function () {
-      button.classList.remove("copied");
-    }, 2000); 
+      const copiedTextElement = document.createElement("div");
+      copiedTextElement.classList.add("copiedText");
+      copiedTextElement.textContent = "Copié dans le presse-papier !";
+
+      document.body.appendChild(copiedTextElement);
+
+      setTimeout(function () {
+          copiedTextElement.classList.add("fadeIn");
+      }, 10);
+
+      setTimeout(function () {
+          button.classList.remove("copied");
+          
+          copiedTextElement.classList.remove("fadeIn");
+          copiedTextElement.classList.add("fadeOut");
+
+          setTimeout(function () {
+              document.body.removeChild(copiedTextElement);
+          }, 1000);
+      }, 2000);
   } catch (err) {
-    console.error("Échec de la copie : ", err);
+      console.error("Échec de la copie : ", err);
   }
 }
