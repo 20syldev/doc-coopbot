@@ -597,7 +597,7 @@ h1 a {
     color: #ffffff;
 }
 
-.codetxt a {
+.channelCode a {
     user-select: none;
     background-color: #5865f2d6;
     color: #dddddd;
@@ -608,7 +608,7 @@ h1 a {
     padding-right: 2px;
 }
 
-.codetxt:hover a {
+.channelCode:hover a {
     text-decoration: none;
     background-color: #5865f2;
     color: #ffffff;
@@ -703,7 +703,7 @@ h1 a {
     height: 24px;
     padding-top: 3.5px;
     border: none;
-    background-color: #539dcf;
+    background-color: #5898f2;
     color: white;
     border-radius: 100%;
     cursor: pointer;
@@ -717,11 +717,36 @@ h1 a {
 }
 
 .copyBtn:hover {
-    background-color: #86c1e8;
+    background-color: #80b3f1;
 }
 
 .copyBtn.copied {
-    background-color: #92febc;
+    background-color: #58eff2;
+}
+
+.copiedText {
+    position: fixed;
+    bottom: 5%;
+    left: 50%;
+    font-family: 'Montserrat', sans-serif;
+    transform: translate(-50%, -50%);
+    background-color: rgba(114, 137, 218, 0.85);
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 100px;
+    text-align: center;
+    font-size: 14px;
+    z-index: 9999;
+    opacity: 0; 
+    transition: opacity 0.5s ease;
+}
+
+.fadeIn {
+    opacity: 1;
+}
+
+.fadeOut {
+    opacity: 0;
 }
 
 .premium {
