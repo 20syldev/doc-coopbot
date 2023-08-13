@@ -159,7 +159,7 @@ function copyContent(button) {
 
       const copiedTextElement = document.createElement("div");
       copiedTextElement.classList.add("copiedText");
-      copiedTextElement.textContent = "Copié dans le presse-papier !";
+      copiedTextElement.textContent = "Lien copié dans le presse-papier !";
 
       document.body.appendChild(copiedTextElement);
 
