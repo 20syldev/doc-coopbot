@@ -703,7 +703,7 @@ h1 a {
     height: 24px;
     padding-top: 3.5px;
     border: none;
-    background-color: #5898f2;
+    background-color: #4a4e5b;
     color: white;
     border-radius: 100%;
     cursor: pointer;
@@ -713,15 +713,15 @@ h1 a {
 .copyBtn img {
     width: 16px;
     height: 16px;
-    margin: -2.5px;
+    margin: -3px;
 }
 
 .copyBtn:hover {
-    background-color: #80b3f1;
+    background-color: #6a6d76;
 }
 
 .copyBtn.copied {
-    background-color: #58eff2;
+    background-color: #5898f2;
 }
 
 .copiedText {
