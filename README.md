@@ -5,7 +5,7 @@
   <br>
   <h2>Coop - Bot Discord - Wiki</h2>
   <a href="https://beacons.ai/coopbot">
-    <img src="https://img.shields.io/badge/Bot :-v1.3.8b-6479ee?labelColor=23272A" alt="Bot">
+    <img src="https://img.shields.io/badge/Bot :-v1.4.0-6479ee?labelColor=23272A" alt="Bot">
   </a>
   <a href="https://discord.gg/ASpCdT2JZQ">
     <img src="https://img.shields.io/discord/1056940597975449710?logo=discord&labelColor=23272A&label=Discord&color=5e60ce" alt="Discord">
