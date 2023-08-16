@@ -3,4 +3,9 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}\.html -f
 RewriteRule ^([^/]+)/$ $1.html [L]
 
+RewriteRule ^doc-coopbot/commands/404$ /doc-coopbot/404 [R=301,L]
+RewriteRule ^doc-coopbot/infos/404$ /doc-coopbot/404 [R=301,L]
+RewriteRule ^doc-coopbot/helps/404$ /doc-coopbot/404 [R=301,L]
+RewriteRule ^doc-coopbot/systems/404$ /doc-coopbot/404 [R=301,L]
+
 ErrorDocument 404 /doc-coopbot/404
