@@ -8,4 +8,24 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_URI} ^/doc-coopbot/
 RewriteRule ^doc-coopbot/(.*)$ /doc-coopbot/404 [L]
 
+RewriteCond %{HTTP_HOST} ^20syldev\.github\.io$ [NC]
+RewriteCond %{REQUEST_URI} ^/doc-coopbot/commands/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^doc-coopbot/commands/(.*)$ /doc-coopbot/commands/404 [L]
+
+RewriteCond %{HTTP_HOST} ^20syldev\.github\.io$ [NC]
+RewriteCond %{REQUEST_URI} ^/doc-coopbot/systems/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^doc-coopbot/systems/(.*)$ /doc-coopbot/systems/404 [L]
+
+RewriteCond %{HTTP_HOST} ^20syldev\.github\.io$ [NC]
+RewriteCond %{REQUEST_URI} ^/doc-coopbot/helps/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^doc-coopbot/helps/(.*)$ /doc-coopbot/helps/404 [L]
+
+RewriteCond %{HTTP_HOST} ^20syldev\.github\.io$ [NC]
+RewriteCond %{REQUEST_URI} ^/doc-coopbot/infos/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^doc-coopbot/infos/(.*)$ /doc-coopbot/infos/404 [L]
+
 ErrorDocument 404 /doc-coopbot/404
