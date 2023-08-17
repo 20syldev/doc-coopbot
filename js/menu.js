@@ -181,9 +181,3 @@ function copyContent(button) {
       console.error("Échec de la copie : ", err);
   }
 }
-
-window.addEventListener('error', function(event) {
-  if (event.target.nodeName.toLowerCase() !== 'body') {
-      window.location.href = '/404'; 
-  }
-});
