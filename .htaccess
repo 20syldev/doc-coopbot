@@ -5,18 +5,22 @@ RewriteRule ^([^/]+)/$ $1.html [L]
 
 RewriteCond %{HTTP_HOST} ^20syldev\.github\.io$
 RewriteCond %{REQUEST_URI} ^/doc-coopbot/commands/
-RewriteRule ^ /doc-coopbot/404 [R=301,L]
-
-RewriteCond %{HTTP_HOST} ^20syldev\.github\.io$
-RewriteCond %{REQUEST_URI} ^/doc-coopbot/helps/
-RewriteRule ^ /doc-coopbot/404 [R=301,L]
-
-RewriteCond %{HTTP_HOST} ^20syldev\.github\.io$
-RewriteCond %{REQUEST_URI} ^/doc-coopbot/infos/
+RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^ /doc-coopbot/404 [R=301,L]
 
 RewriteCond %{HTTP_HOST} ^20syldev\.github\.io$
 RewriteCond %{REQUEST_URI} ^/doc-coopbot/systems/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^ /doc-coopbot/404 [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^20syldev\.github\.io$
+RewriteCond %{REQUEST_URI} ^/doc-coopbot/helps/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^ /doc-coopbot/404 [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^20syldev\.github\.io$
+RewriteCond %{REQUEST_URI} ^/doc-coopbot/infos/
+RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^ /doc-coopbot/404 [R=301,L]
 
 ErrorDocument 404 /doc-coopbot/404
