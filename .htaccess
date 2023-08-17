@@ -6,6 +6,6 @@ RewriteRule ^([^/]+)/$ $1.html [L]
 RewriteCond %{HTTP_HOST} ^20syldev\.github\.io$ [NC]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_URI} ^/doc-coopbot/
-RewriteRule ^doc-coopbot/(.*)$ /doc-coopbot/404 [R=301,L]
+RewriteRule ^doc-coopbot/(.*)$ /doc-coopbot/404 [L]
 
 ErrorDocument 404 /doc-coopbot/404
