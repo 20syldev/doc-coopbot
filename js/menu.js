@@ -181,3 +181,19 @@ function copyContent(button) {
       console.error("Échec de la copie : ", err);
   }
 }
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const pathName = window.location.pathname;
+  const currentPagePath = pathName.substring(pathName.lastIndexOf("/") + 1);
+
+  if (currentPagePath) {
+    const menuLinks = document.querySelectorAll("#menu a");
+
+    menuLinks.forEach(link => {
+      if (link.getAttribute("href") === currentPagePath) {
+        link.parentElement.classList.add("menucolor1");
+      }
+    });
+  }
+});
