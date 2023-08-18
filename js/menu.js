@@ -188,14 +188,18 @@ document.addEventListener("DOMContentLoaded", function () {
   const currentPagePath = pathName.substring(pathName.lastIndexOf("/") + 1);
 
   if (currentPagePath) {
-    const menuLinks = document.querySelectorAll("#menu a");
-
-    menuLinks.forEach(link => {
-      if (link.getAttribute("href") === currentPagePath) {
-        link.parentElement.classList.add("menucolor1");
+    const menuItems = document.querySelectorAll(".menu-items li span");
+    
+    menuItems.forEach(item => {
+      const link = item.querySelector("a");
+      const linkPath = link.getAttribute("href");
+      
+      if (linkPath === currentPagePath) {
+        item.classList.add("menucolor1");
       } else {
-        link.parentElement.classList.remove("menucolor1");
+        item.classList.add("menucolor0");
       }
     });
   }
 });
+  
