@@ -205,12 +205,11 @@ h1 a {
     display: block;
     color: #a1adb8;
     transition: color 0.3s ease-in-out;
-  }
-  
-  .menu-items li.active a {
+}
+
+.menu-items li a:hover {
     color: #76a4e4;
-  }
-  
+}
 
   
 #bar1 {
