@@ -186,17 +186,15 @@ function copyContent(button) {
 document.addEventListener("DOMContentLoaded", function () {
   const pathName = window.location.pathname;
   const currentPagePath = pathName.substring(pathName.lastIndexOf("/") + 1);
-  const currentPageName = currentPagePath.replace(".html", ""); // Supprimer .html s'il existe
 
-  if (currentPageName) {
+  if (currentPagePath) {
     const menuItems = document.querySelectorAll(".menu-items li");
 
     menuItems.forEach(item => {
       const link = item.querySelector("a");
       const linkPath = link.getAttribute("href");
-      const linkPageName = linkPath.replace(".html", ""); // Supprimer .html du lien
 
-      if (linkPageName === currentPageName) {
+      if (linkPath === currentPagePath) {
         item.classList.add("active");
       }
     });
