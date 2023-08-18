@@ -188,11 +188,13 @@ document.addEventListener("DOMContentLoaded", function () {
   const currentPagePath = pathName.substring(pathName.lastIndexOf("/") + 1);
 
   if (currentPagePath) {
-    const menuLinks = document.querySelectorAll("#menu a");
+    const menuLinks = document.querySelectorAll(".openmenu");
 
     menuLinks.forEach(link => {
       if (link.getAttribute("href") === currentPagePath) {
         link.parentElement.classList.add("menucolor1");
+      } else {
+        link.parentElement.classList.remove("menucolor1");
       }
     });
   }
