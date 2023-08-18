@@ -188,7 +188,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const currentPagePath = pathName.substring(pathName.lastIndexOf("/") + 1);
 
   if (currentPagePath) {
-    const menuLinks = document.querySelectorAll(".openmenu");
+    const menuLinks = document.querySelectorAll("#menu a");
 
     menuLinks.forEach(link => {
       if (link.getAttribute("href") === currentPagePath) {
