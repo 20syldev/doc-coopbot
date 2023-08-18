@@ -186,20 +186,19 @@ function copyContent(button) {
 document.addEventListener("DOMContentLoaded", function () {
   const pathName = window.location.pathname;
   const currentPagePath = pathName.substring(pathName.lastIndexOf("/") + 1);
+  const currentPageName = currentPagePath.replace(".html", ""); // Supprimer .html s'il existe
 
-  if (currentPagePath) {
-    const menuItems = document.querySelectorAll(".menu-items li span");
-    
+  if (currentPageName) {
+    const menuItems = document.querySelectorAll(".menu-items li");
+
     menuItems.forEach(item => {
       const link = item.querySelector("a");
       const linkPath = link.getAttribute("href");
-      
-      if (linkPath === currentPagePath) {
-        item.classList.add("menucolor1");
-      } else {
-        item.classList.add("menucolor0");
+      const linkPageName = linkPath.replace(".html", ""); // Supprimer .html du lien
+
+      if (linkPageName === currentPageName) {
+        item.classList.add("active");
       }
     });
   }
 });
-  
