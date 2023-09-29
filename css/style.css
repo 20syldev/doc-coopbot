@@ -105,6 +105,16 @@ h1 a {
     padding: 0;
 }
 
+@font-face {
+    font-family: Ginto-Nord-600;
+    src: url('./Ginto-Nord-600.woff') format('woff');
+}
+
+@font-face {
+    font-family: Ginto-Nord-700;
+    src: url('./Ginto-Nord-700.woff') format('woff');
+}
+
 #footer .text {
     user-select: none;
     position: relative;
@@ -112,7 +122,7 @@ h1 a {
     left: 10%;
     transform: translateY(-50%);
     font-size: 1.7em;
-    font-family: 'Braah One', sans-serif;
+    font-family: 'Ginto-Nord-700', sans-serif;
     font-weight: lighter;
 
     color: #c6e2ff;
@@ -417,9 +427,8 @@ h1 a {
 
 .titleHome {
     margin-left: 35%;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Ginto-Nord-600', sans-serif;
     font-size: 2.6em;
-    font-weight: bolder;
 }
 
 .sub0 {
