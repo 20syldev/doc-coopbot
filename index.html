@@ -11,7 +11,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Braah+One" rel="stylesheet">
     <script src="js/menu.js"></script>
 </head>
-<body id="body-color">
+<body id="body-color" onload="changeMessage()">
+
+<div id="barPromo">
+  <div class="text" id="promoText"></div>
+  <button class="btnsHide" onclick="promoHide()"><img src="images/cross.png" alt="Fermer"></button>
+</div>
 
 <div id="menu-container"></div>
  
