@@ -181,3 +181,47 @@ function copyContent(button) {
       console.error("Échec de la copie : ", err);
   }
 }
+
+function promoHide() {
+  var barPromo = document.getElementById('barPromo');
+  var footer = document.getElementById('footer');
+  var menu = document.getElementById('left-menu');
+
+  barPromo.style.display = (barPromo.style.display === 'none' || barPromo.style.display === '') ? 'block' : 'none';
+
+  localStorage.setItem('promoHidden', barPromo.style.display);
+
+  var valeur = (barPromo.style.display === 'none') ? 0 : 50;
+
+  footer.style.top = valeur + 'px';
+  menu.style.top = valeur + 'px';
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+  var promoState = localStorage.getItem('promoHidden');
+  var barPromo = document.getElementById('barPromo');
+  var footer = document.getElementById('footer');
+  var menu = document.getElementById('left-menu');
+
+  if (promoState) {
+    barPromo.style.display = promoState;
+
+    var valeur = (barPromo.style.display === 'none') ? 0 : 50;
+    footer.style.top = valeur + 'px';
+    menu.style.top = valeur + 'px';
+  }
+});
+
+
+function changeMessage() {
+  var messages = [
+    "🎁 <b>30%</b> de réduction sur le pack Premium. Offre à durée limitée. <a id='promo' href='https://shop.beacons.ai/coopbot/d66b4ff7-26ab-4af8-8967-8ca83a41a349'>Abonnez-vous maintenant</a>.",
+    "🎁 Pack Plus à <b>3,99 €</b> <span class='promoCroix'>4,99 €</span>. Offre à durée limitée. <a id='promo' href='https://shop.beacons.ai/coopbot/b82690a7-3782-4969-8c2e-2b48403523dc'>Abonnez-vous maintenant</a>.",
+    "🎁 Pack Standard à prix réduit, <b>-10%</b> pendant les fêtes. Offre à durée limitée. <a id='promo' href='https://shop.beacons.ai/coopbot/1548ee35-dabb-4c51-a5fa-e58d7777d769'>Abonnez-vous maintenant</a>."
+  ];
+
+  var randomIndex = Math.floor(Math.random() * messages.length);
+  var selectedMessage = messages[randomIndex];
+
+  document.getElementById('promoText').innerHTML = selectedMessage;
+}
