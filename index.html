@@ -10,6 +10,105 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;690&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Braah+One" rel="stylesheet">
     <script src="js/menu.js"></script>
+    <style>
+      #footer {
+        position: fixed;
+        top: 50px;
+        width: 100%;
+        height: 51px;
+        background: #4E5D94;
+        color: #ffffff;
+        font-size: 1.5em;
+        text-align: center;
+        padding: 0;
+      }
+
+      #left-menu {
+        position: fixed;
+        left: 0;
+        top: 50px;
+        width: 300px;
+        height: 100vh;
+        background-color: #292c2f;
+        z-index: 1;
+        transform: translateX(0);
+        transition: transform 0.3s ease-in-out;
+        display: flex;
+        flex-direction: column;
+      }
+
+      #promo {
+        color: #ffffff;
+        text-decoration: underline;
+      }
+
+      #promo:hover {
+        color: #eeeeee;
+      }
+
+      .promoCroix {
+        position: relative;
+        display: inline-block;
+      }
+
+      .promoCroix::before {
+        content: "";
+        position: absolute;
+        top: 65%;
+        left: -5%;
+        width: 115%;
+        height: 1.5px;
+        background: #ff4444;
+        transform: rotate(-10deg);
+        transform-origin: 0 0;
+      }
+
+      #barPromo {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 50px;
+        background: #8a52e6;
+        color: #ffffff;
+        font-size: 0.8em;
+        text-align: center;
+        padding: 0;
+      }
+
+      #barPromo .text {
+        user-select: none;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 1.7em;
+        font-family: 'Montserrat', sans-serif;
+        color: #ffffff;
+      }
+
+      .btnsHide {
+        position: absolute;
+        right: 20px;
+        background-color: #ffffff00;
+        color: #ffffff;
+        cursor: pointer;
+        border-width: 0;
+        transition: transform 0.2s;
+      }
+
+      .btnsHide:hover {
+        transform: scale(0.9);
+        filter: invert(20%);
+      }
+
+      .btnsHide:active {
+        transform: scale(0.85);
+      }
+
+      .btnsHide img {
+        width: 12px;
+        height: 12px;
+      }
+    </style>
 </head>
 <body id="body-color" onload="changeMessage()">
 
