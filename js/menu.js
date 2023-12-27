@@ -183,34 +183,40 @@ function copyContent(button) {
 }
 
 function promoHide() {
-  var barPromo = document.getElementById('barPromo');
-  var footer = document.getElementById('footer');
-  var menu = document.getElementById('left-menu');
+  if (isHomePage() || isIndexPage()) {
+    var barPromo = document.getElementById('barPromo');
+    var footer = document.getElementById('footer');
+    var menu = document.getElementById('left-menu');
 
-  barPromo.style.display = (barPromo.style.display === 'none' || barPromo.style.display === '') ? 'block' : 'none';
+    barPromo.style.display = (barPromo.style.display === 'none' || barPromo.style.display === '') ? 'block' : 'none';
 
-  localStorage.setItem('promoHidden', barPromo.style.display);
+    localStorage.setItem('promoHidden', barPromo.style.display);
 
-  var valeur = (barPromo.style.display === 'none') ? 0 : 50;
+    var valeur = (barPromo.style.display === 'none') ? 0 : 50;
 
-  footer.style.top = valeur + 'px';
-  menu.style.top = valeur + 'px';
+    footer.style.top = menu.style.top = valeur + 'px';
+  }
 }
 
 document.addEventListener('DOMContentLoaded', function () {
-  var promoState = localStorage.getItem('promoHidden');
-  var barPromo = document.getElementById('barPromo');
-  var footer = document.getElementById('footer');
-  var menu = document.getElementById('left-menu');
+  if (mainPage()) {
+    var promoState = localStorage.getItem('promoHidden');
+    var barPromo = document.getElementById('barPromo');
+    var footer = document.getElementById('footer');
+    var menu = document.getElementById('left-menu');
 
-  if (promoState) {
-    barPromo.style.display = promoState;
-
-    var valeur = (barPromo.style.display === 'none') ? 0 : 50;
-    footer.style.top = valeur + 'px';
-    menu.style.top = valeur + 'px';
+    if (promoState) {
+      barPromo.style.display = promoState;
+      footer.style.top = menu.style.top = (barPromo.style.display === 'none') ? 0 : 50 + 'px';
+    }
   }
 });
+
+function mainPage() {
+  var url = window.location.href;
+  return url.includes('/doc-coopbot/') || url.includes('/doc-coopbot/index') || url.includes('/doc-coopbot/home');
+}
+
 
 
 function changeMessage() {
