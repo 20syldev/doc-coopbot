@@ -212,18 +212,63 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 });
 
+document.addEventListener('DOMContentLoaded', function () {
+  var date = new Date();
+  var limitePromo = new Date(2024, 0, 31, 23, 59, 59);
+
+  if (date > limitePromo) {
+    var barPromo = document.getElementById('barPromo');
+    var footer = document.getElementById('footer');
+    var menu = document.getElementById('left-menu');
+
+    barPromo.style.display = 'none';
+    localStorage.setItem('promoHidden', 'none');
+
+    footer.style.top = menu.style.top = '0px';
+  } else {
+    promoHide();
+  }
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  var limitePromo = new Date(2024, 0, 31, 23, 59, 59);
+  setInterval(function() {
+    var date = new Date();
+    var tempsRestant = limitePromo - date;
+    var jours = Math.floor(tempsRestant / (1000 * 60 * 60 * 24));
+    var heures = Math.floor((tempsRestant % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((tempsRestant % (1000 * 60 * 60)) / (1000 * 60));
+    var secondes = Math.floor((tempsRestant % (1000 * 60)) / 1000);
+    document.getElementById("compteur").innerHTML = jours + "j " + heures + "h " + minutes + "m " + secondes + "s";
+ }, 1000);
+});
+
+function promoHide() {
+  if (isHomePage() || isIndexPage()) {
+    var barPromo = document.getElementById('barPromo');
+    var footer = document.getElementById('footer');
+    var menu = document.getElementById('left-menu');
+
+    barPromo.style.display = (barPromo.style.display === 'none' || barPromo.style.display === '') ? 'block' : 'none';
+
+    localStorage.setItem('promoHidden', barPromo.style.display);
+
+    var valeur = (barPromo.style.display === 'none') ? 0 : 50;
+
+    footer.style.top = menu.style.top = valeur + 'px';
+  }
+}
+
 function mainPage() {
   var url = window.location.href;
   return url.includes('/doc-coopbot/') || url.includes('/doc-coopbot/index') || url.includes('/doc-coopbot/home');
 }
 
-
-
 function changeMessage() {
   var messages = [
-    "🎁 <b>30%</b> de réduction sur le pack Premium. Offre à durée limitée. <a id='promo' href='https://shop.beacons.ai/coopbot/d66b4ff7-26ab-4af8-8967-8ca83a41a349'>Abonnez-vous maintenant</a>.",
-    "🎁 Pack Plus à <b>3,99 €</b> <span class='promoCroix'>4,99 €</span>. Offre à durée limitée. <a id='promo' href='https://shop.beacons.ai/coopbot/b82690a7-3782-4969-8c2e-2b48403523dc'>Abonnez-vous maintenant</a>.",
-    "🎁 Pack Standard à prix réduit, <b>-10%</b> pendant les fêtes. Offre à durée limitée. <a id='promo' href='https://shop.beacons.ai/coopbot/1548ee35-dabb-4c51-a5fa-e58d7777d769'>Abonnez-vous maintenant</a>."
+    "🎁 <b>30%</b> de réduction sur le pack Premium jusqu'à fin Janvier. <a id='promo' href='https://shop.beacons.ai/coopbot/d66b4ff7-26ab-4af8-8967-8ca83a41a349'>Abonnez-vous maintenant</a>.",
+    "🎁 Pack Plus à <b>3,99 €</b> <span class='promoCroix'>4,99 €</span> pendant encore <span id='compteur'></span>. <a id='promo' href='https://shop.beacons.ai/coopbot/b82690a7-3782-4969-8c2e-2b48403523dc'>Abonnez-vous maintenant</a>.",
+    "🎁 Pack Standard à prix réduit, <b>-10%</b> jusqu'au 31 Janvier. <a id='promo' href='https://shop.beacons.ai/coopbot/1548ee35-dabb-4c51-a5fa-e58d7777d769'>Abonnez-vous maintenant</a>."
   ];
 
   var randomIndex = Math.floor(Math.random() * messages.length);
