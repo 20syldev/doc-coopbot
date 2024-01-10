@@ -182,22 +182,6 @@ function copyContent(button) {
   }
 }
 
-function promoHide() {
-  if (isHomePage() || isIndexPage()) {
-    var barPromo = document.getElementById('barPromo');
-    var footer = document.getElementById('footer');
-    var menu = document.getElementById('left-menu');
-
-    barPromo.style.display = (barPromo.style.display === 'none' || barPromo.style.display === '') ? 'block' : 'none';
-
-    localStorage.setItem('promoHidden', barPromo.style.display);
-
-    var valeur = (barPromo.style.display === 'none') ? 0 : 50;
-
-    footer.style.top = menu.style.top = valeur + 'px';
-  }
-}
-
 document.addEventListener('DOMContentLoaded', function () {
   if (mainPage()) {
     var promoState = localStorage.getItem('promoHidden');
@@ -244,7 +228,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 function promoHide() {
-  if (isHomePage() || isIndexPage()) {
+  if (mainPage()) {
     var barPromo = document.getElementById('barPromo');
     var footer = document.getElementById('footer');
     var menu = document.getElementById('left-menu');
@@ -275,4 +259,15 @@ function changeMessage() {
   var selectedMessage = messages[randomIndex];
 
   document.getElementById('promoText').innerHTML = selectedMessage;
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+  window.onscroll = function () { updateProgressBar() };
+});
+
+function updateProgressBar() {
+  const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  const scrolled = (winScroll / height) * 100;
+  document.getElementById("progress-bar").style.width = scrolled + "%";
 }
