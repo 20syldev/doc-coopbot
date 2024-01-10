@@ -781,3 +781,33 @@ h1 a {
     -webkit-background-clip: text;
     color: transparent;
 }
+
+#progress-bar-container {
+    position: fixed;
+    bottom: 0;
+    left: 300px;
+    width: 90%;
+    height: 3px;
+}
+
+#progress-bar {
+    height: 100%;
+    width: 0;
+    background-color: #76a4e4; 
+    transition: width 0.3s;
+}
+
+#progress-bar-container.theme1 {
+    background-color: #131516;
+    color: #98a3ad;
+}
+
+#progress-bar-container.theme2 {
+    background-color: #36393f;
+    color: #ffffff;
+}
+
+#progress-bar-container.theme3 {
+    background-color: #161923;
+    color: #bcbdd0;
+}
