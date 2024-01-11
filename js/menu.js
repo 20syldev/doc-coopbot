@@ -183,39 +183,20 @@ function copyContent(button) {
 }
 
 document.addEventListener('DOMContentLoaded', function () {
-  if (mainPage()) {
-    var promoState = localStorage.getItem('promoHidden');
-    var barPromo = document.getElementById('barPromo');
-    var footer = document.getElementById('footer');
-    var menu = document.getElementById('left-menu');
-
-    if (promoState) {
-      barPromo.style.display = promoState;
-      footer.style.top = menu.style.top = (barPromo.style.display === 'none') ? 0 : 50 + 'px';
-    }
-  }
-});
-
-document.addEventListener('DOMContentLoaded', function () {
   var date = new Date();
   var limitePromo = new Date(2024, 0, 31, 23, 59, 59);
+  var barPromo = document.getElementById('barPromo');
+  var footer = document.getElementById('footer');
+  var menu = document.getElementById('left-menu');
 
   if (date > limitePromo) {
-    var barPromo = document.getElementById('barPromo');
-    var footer = document.getElementById('footer');
-    var menu = document.getElementById('left-menu');
-
     barPromo.style.display = 'none';
     localStorage.setItem('promoHidden', 'none');
-
     footer.style.top = menu.style.top = '0px';
   } else {
     promoHide();
   }
-});
 
-document.addEventListener('DOMContentLoaded', function () {
-  var limitePromo = new Date(2024, 0, 31, 23, 59, 59);
   setInterval(function() {
     var date = new Date();
     var tempsRestant = limitePromo - date;
@@ -224,7 +205,16 @@ document.addEventListener('DOMContentLoaded', function () {
     var minutes = Math.floor((tempsRestant % (1000 * 60 * 60)) / (1000 * 60));
     var secondes = Math.floor((tempsRestant % (1000 * 60)) / 1000);
     document.getElementById("compteur").innerHTML = jours + "j " + heures + "h " + minutes + "m " + secondes + "s";
- }, 1000);
+  }, 1000);
+
+  if (mainPage()) {
+    var promoState = localStorage.getItem('promoHidden');
+    barPromo.style.display = promoState || 'block';
+    var valeur = (barPromo.style.display === 'none') ? 0 : 50;
+    footer.style.top = menu.style.top = valeur + 'px';
+  }
+  
+  window.onscroll = function () { updateProgressBar() };
 });
 
 function promoHide() {
@@ -232,13 +222,9 @@ function promoHide() {
     var barPromo = document.getElementById('barPromo');
     var footer = document.getElementById('footer');
     var menu = document.getElementById('left-menu');
-
     barPromo.style.display = (barPromo.style.display === 'none' || barPromo.style.display === '') ? 'block' : 'none';
-
     localStorage.setItem('promoHidden', barPromo.style.display);
-
     var valeur = (barPromo.style.display === 'none') ? 0 : 50;
-
     footer.style.top = menu.style.top = valeur + 'px';
   }
 }
@@ -260,10 +246,6 @@ function changeMessage() {
 
   document.getElementById('promoText').innerHTML = selectedMessage;
 }
-
-document.addEventListener("DOMContentLoaded", function () {
-  window.onscroll = function () { updateProgressBar() };
-});
 
 function updateProgressBar() {
   const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
