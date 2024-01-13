@@ -155,7 +155,6 @@ h1 a {
     background-color: #161923;
 }
 
-
 #left-menu {
     position: fixed;
     left: 0;
@@ -182,7 +181,6 @@ h1 a {
 #left-menu.theme3 {
     background-color: #282d3f;
 }
-
 
 .menu-items {
     padding: 5px;
@@ -220,7 +218,6 @@ h1 a {
 .menu-items li a:hover {
     color: #76a4e4;
 }
-
   
 #bar1 {
     margin-left: 5px;
@@ -309,7 +306,6 @@ h1 a {
     animation: rotateOutAnimation 0.3s ease-in-out forwards;
 }
 
-
 .toggle2 {
     position: relative;
     cursor: pointer;
@@ -332,7 +328,6 @@ h1 a {
 .toggle2.reverse div {
     animation: rotateOutAnimation 0.3s ease-in-out forwards;
 }
-
 
 .toggle3 {
     position: relative;
@@ -482,8 +477,6 @@ h1 a {
     background-color: #474d54;
 }
 
-
-
 #btn1 {
     user-select: none;
     position: absolute;
@@ -571,7 +564,6 @@ h1 a {
     transform: scale(0.85);
 }
 
-
 .block {
     margin-left: 35%;
     padding-left: 1.2%;
@@ -625,7 +617,6 @@ h1 a {
     background-color: #5865f2;
     color: #ffffff;
 }
-
 
 .mentionuser {
     user-select: none;
