@@ -574,6 +574,7 @@ h1 a {
 }
 
 .block {
+    line-height: 1.4em;
     margin-left: 35%;
     padding-left: 1.2%;
     padding-top: 1.2%;
@@ -589,7 +590,7 @@ h1 a {
     --links: #0A95FF;
     --inline-code-color: #bdbdbd;
     font-family: 'Open Sans', sans-serif;
-    font-size: 1.35em;
+    font-size: 2em;
     width: 53.3%;
 }
 
