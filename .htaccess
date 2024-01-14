@@ -11,3 +11,7 @@ RewriteCond %{REQUEST_FILENAME}\.html -f
 RewriteRule ^([^/]+)/$ $1.html [L]
 
 ErrorDocument 404 /404
+ErrorDocument 404 /systems/404
+ErrorDocument 404 /commands/404
+ErrorDocument 404 /helps/404
+ErrorDocument 404 /infos/404
