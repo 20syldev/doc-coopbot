@@ -1,16 +1,13 @@
 RewriteEngine On
 
-# Redirections spécifiques vers la page d'erreur 404
-RewriteRule ^doc-coopbot/404$ /404 [L]
-RewriteRule ^doc-coopbot/systems/404$ /404 [L]
-RewriteRule ^doc-coopbot/commands/404$ /404 [L]
-RewriteRule ^doc-coopbot/helps/404$ /404 [L]
-RewriteRule ^doc-coopbot/infos/404$ /404 [L]
+RewriteRule ^doc-coopbot/404$ /404 [L,R=404]
+RewriteRule ^doc-coopbot/systems/404$ /404 [L,R=404]
+RewriteRule ^doc-coopbot/commands/404$ /404 [L,R=404]
+RewriteRule ^doc-coopbot/helps/404$ /404 [L,R=404]
+RewriteRule ^doc-coopbot/infos/404$ /404 [L,R=404]
 
-# Règles mod_rewrite pour les autres URL
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}\.html -f
 RewriteRule ^([^/]+)/$ $1.html [L]
 
-# Page d'erreur 404 par défaut
 ErrorDocument 404 /404
