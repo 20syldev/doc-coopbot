@@ -253,3 +253,13 @@ function updateProgressBar() {
   const scrolled = (winScroll / height) * 100;
   document.getElementById("progress-bar").style.width = scrolled + "%";
 }
+
+window.addEventListener('error', function (e) {
+  if (e && e.error && e.error.message.includes('Failed to load resource')) {
+      const resourceUrl = e.target.src || e.target.href;
+
+      if (resourceUrl.endsWith('.css')) {
+          window.location.href = 'https://20syldev.github.io/doc-coopbot/systems/404';
+      }
+  }
+});
