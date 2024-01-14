@@ -1,11 +1,5 @@
 RewriteEngine On
 
-RewriteRule ^doc-coopbot/404$ /404 [L,R=404]
-RewriteRule ^doc-coopbot/systems/404$ /404 [L,R=404]
-RewriteRule ^doc-coopbot/commands/404$ /404 [L,R=404]
-RewriteRule ^doc-coopbot/helps/404$ /404 [L,R=404]
-RewriteRule ^doc-coopbot/infos/404$ /404 [L,R=404]
-
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}\.html -f
 RewriteRule ^([^/]+)/$ $1.html [L]
@@ -14,4 +8,4 @@ ErrorDocument 404 /404
 ErrorDocument 404 /systems/404
 ErrorDocument 404 /commands/404
 ErrorDocument 404 /helps/404
-ErrorDocument 404 /infos/404
+ErrorDocument 404 /infos/404    
