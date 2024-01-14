@@ -1,12 +1,16 @@
-Options -MultiViews
-
 RewriteEngine On
+
+# Redirections spécifiques vers la page d'erreur 404
+RewriteRule ^doc-coopbot/404$ /404 [L]
+RewriteRule ^doc-coopbot/systems/404$ /404 [L]
+RewriteRule ^doc-coopbot/commands/404$ /404 [L]
+RewriteRule ^doc-coopbot/helps/404$ /404 [L]
+RewriteRule ^doc-coopbot/infos/404$ /404 [L]
+
+# Règles mod_rewrite pour les autres URL
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}\.html -f
 RewriteRule ^([^/]+)/$ $1.html [L]
 
-ErrorDocument 404 /doc-coopbot/404
-ErrorDocument 404 /doc-coopbot/systems/404
-ErrorDocument 404 /doc-coopbot/commands/404
-ErrorDocument 404 /doc-coopbot/helps/404
-ErrorDocument 404 /doc-coopbot/infos/404
+# Page d'erreur 404 par défaut
+ErrorDocument 404 /404
