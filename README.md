@@ -11,7 +11,7 @@
     <img src="https://img.shields.io/discord/1056940597975449710?logo=discord&labelColor=23272A&label=Discord&color=5e60ce" alt="Discord">
   </a>
   <a href="https://github.io/20syldev/doc-coopbot">
-    <img src="https://img.shields.io/badge/Wiki :-v0.9.997b-6479ee?labelColor=23272A" alt="Wiki">
+    <img src="https://img.shields.io/badge/Wiki :-v0.9.998b-6479ee?labelColor=23272A" alt="Wiki">
   </a>
 </div>
 
