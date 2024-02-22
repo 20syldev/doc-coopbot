@@ -13,6 +13,10 @@
   <a href="https://github.io/20syldev/doc-coopbot">
     <img src="https://img.shields.io/badge/Wiki :-v0.9.998b-6479ee?labelColor=23272A" alt="Wiki">
   </a>
+  <br>
+  <a href="https://coopbot.betteruptime.com/">
+    <img src="https://uptime.betterstack.com/status-badges/v3/monitor/xt9n.svg" alt="Wiki">
+  </a>
 </div>
 
 ---
