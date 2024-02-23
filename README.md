@@ -1,5 +1,5 @@
 <div align="center">
-  <a href="https://beacons.ai/coopbot">
+  <a href="https://coopbot.xyz">
     <img src="https://i.postimg.cc/gJJ9wB58/Coop-Bot-Lettre-Unique.png" alt="Coop Bot" style="width: 25%;">
   </a>
   <br>
@@ -24,7 +24,7 @@ Il s'agit du dépôt **GitHub officiel** du Wiki Coop Bot qui explique les comma
 
 ### 🔗 Liens 
 - [Site Internet](https://beacons.ai/coopbot)
-- [Wiki](https://20syldev.github.io/doc-coopbot)
+- [Wiki](https://coopbot.xyz)
 - [Inviter le bot](https://discord.com/api/oauth2/authorize?client_id=881455282838962186&permissions=8&redirect_uri=https%3A%2F%2Fdiscord.gg%2FASpCdT2JZQ&response_type=code&scope=bot%20messages.read%20guilds.members.read%20identify%20guilds%20role_connections.write%20applications.commands)
 - [Serveur Support Discord](https://discord.gg/ASpCdT2JZQ)
 - [Top.gg](https://top.gg/bot/881455282838962186)
