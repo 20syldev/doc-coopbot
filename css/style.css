@@ -752,24 +752,21 @@ h1 a {
     opacity: 0;
 }
 
-.premium {
-    background: linear-gradient(45deg, #ffce6b, #dabe63);
+.standard {
+    background: linear-gradient(45deg, #fba5f4, #d695ff);
     background-clip: text;
-    -webkit-background-clip: text;
     color: transparent;
 }
 
 .plus {
     background: linear-gradient(45deg, #86f48a, #77f6b4);
     background-clip: text;
-    -webkit-background-clip: text;
     color: transparent;
 }
 
-.standard {
-    background: linear-gradient(45deg, #fba5f4, #d695ff);
+.premium {
+    background: linear-gradient(45deg, #ffce6b, #dabe63);
     background-clip: text;
-    -webkit-background-clip: text;
     color: transparent;
 }
 
