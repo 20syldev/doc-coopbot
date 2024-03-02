@@ -10,7 +10,7 @@ jobs:
     name: "v*"
     runs-on: "ubuntu-latest"
     steps:
-      - uses: "20syldev/doc-coopbot/releases/tag/v0.9.9-b"
+      - uses: "20syldev/doc-coopbot@v0.9.9-b"
         with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
           prerelease: true
