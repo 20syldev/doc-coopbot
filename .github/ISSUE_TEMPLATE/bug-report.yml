@@ -1,0 +1,46 @@
+name: Rapport de bug
+description: Déposer un rapport de bug et aider à améliorer ce projet
+title: "[🐛] : "
+labels: ["Bug"]
+assignees:
+  - 20syldev
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Merci d'avoir pris le temps de remplir ce rapport de bug !
+
+        🔍 Avant de continuer, assurez-vous de chercher les [problèmes existants](https://github.com/20syldev/doc-coopbot/issues) pour éviter de créer des doublons.
+        🤔 N'oubliez pas de consulter les [notes importantes](https://github.com/20syldev/doc-coopbot#readme).
+        🐞 Limitez ce problème à **un seul rapport de bug** pour plus de clarté et de facilité de lecture.
+        ✨ Gardez le problème concis et clair autant que possible.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Qu'est-ce qui n'a pas fonctionné ?
+      description: "Une description détaillée et claire de ce qu'est le bug"
+      placeholder: "Décrire le bug survenu lors de l'utilisation du site"
+    validations:
+      required: true
+
+  - type: textarea
+    id: assets
+    attributes:
+      label: Relevant Assets
+      description: |
+        Liste des fichiers (console, captures d'écran, enregistrements d'écran, etc.) relatifs à ce bug.
+        Conseil : Vous pouvez joindre des images ou des fichiers locaux en cliquant sur cette zone, puis en faisant glisser les fichiers ici.
+      placeholder: "Tout autre contexte, capture d'écran ou enregistrement d'écran"
+
+  - type: checkboxes
+    id: bug-report-issue-checklist
+    attributes:
+      label: Checklist de pré-soumission
+      description: Cochez les cases correspondantes pour poursuivre la soumission de ce rapport de bug.
+      options:
+        - label: "J'ai vérifié [le gestionnaire de problèmes](https://github.com/20syldev/doc-coopbot/issues?q=is%3Aissue+label%3ABug) et je n'ai pas trouvé de problème en double"
+          required: true
+        - label: "Ce problème ne concerne qu'un bug ou un problème particulier"
+          required: true
