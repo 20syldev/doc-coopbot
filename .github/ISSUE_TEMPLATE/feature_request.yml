@@ -1,0 +1,59 @@
+name: Demande de nouvelle fonctionnalité
+description: Suggérer une idée que vous avez en tête pour ce projet
+title: "[💡] : "
+labels: ["Amélioration"]
+assignees:
+  - 20syldev
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Merci d'avoir pris le temps de suggérer une idée pour ce projet !
+
+        🔍 Avant de continuer, assurez-vous de chercher dans les [demandes existantes](https://github.com/20syldev/doc-coopbot/issues) pour éviter de créer des doublons.
+        💡 Limitez cette demande à **une seule demande de fonctionnalité** pour plus de clarté et de facilité de lecture.
+        ✨ Gardez le problème concis et clair autant que possible.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Quel est le problème ?
+      description: Si votre demande de fonctionnalité est liée à un problème, décrivez-le clairement.
+      placeholder: "Ex : Je suis toujours frustré lorsque [...]"
+
+  - type: textarea
+    id: feature-idea
+    attributes:
+      label: Quelle est votre solution ou votre idée ?
+      description: "Une description claire et concise de ce que vous voulez qu'il se passe"
+      placeholder: "Ex : Je voudrais le site affiche [...]"
+    validations:
+      required: true
+
+  - type: textarea
+    id: feature-alternatives
+    attributes:
+      label: Alternatives envisagées
+      description: "Décrivez les alternatives que vous avez envisagées"
+      placeholder: "Ex : J'ai envisagé [...] comme alternative à cette question"
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Autres éléments complémentaires
+      description: "Ajoutez ici tout autre commentaire ou capture d'écran concernant la demande de fonctionnalité."
+      placeholder: "Tout contexte ou capture d'écran supplémentaire"
+
+  - type: checkboxes
+    id: feature-request-issue-checklist
+    attributes:
+      label: Checklist de pré-soumission
+      description: Cochez les cases correspondantes pour poursuivre la soumission de cette demande de fonctionnalité.
+      options:
+        - label: "J'ai vérifié [le gestionnaire de demandes](https://github.com/20syldev/doc-coopbot/issues?q=is%3Aissue+label%3AAm%C3%A9lioration) et je n'ai pas trouvé de demande en double"
+          required: true
+        - label: "Ce problème ne concerne qu'une demande de fonctionnalité particulière"
+          required: true
