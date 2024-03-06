@@ -132,9 +132,10 @@ function copyContent(button) {
 
 function changeMessage() {
   var messages = [
-    "🎁 <b>30%</b> de réduction sur le pack Premium jusqu'à fin Janvier. <a id='promo' href='https://shop.beacons.ai/coopbot/d66b4ff7-26ab-4af8-8967-8ca83a41a349'>Abonnez-vous maintenant</a>.",
+    "🎁 <b>Promotions</b> de printemps, des réductions sur tout le site. <a id='promo' href='https://coopbot.xyz/store'>Abonnez-vous maintenant</a>.",
+    "🎁 <b>30%</b> de réduction sur le pack Premium jusqu'à fin Mars. <a id='promo' href='https://shop.beacons.ai/coopbot/d66b4ff7-26ab-4af8-8967-8ca83a41a349'>Abonnez-vous maintenant</a>.",
     "🎁 Pack Plus à <b>3,99 €</b> <span class='promoCroix'>4,99 €</span> pendant encore <span id='compteur'></span>. <a id='promo' href='https://shop.beacons.ai/coopbot/b82690a7-3782-4969-8c2e-2b48403523dc'>Abonnez-vous maintenant</a>.",
-    "🎁 Pack Standard à prix réduit, <b>-10%</b> jusqu'au 31 Janvier. <a id='promo' href='https://shop.beacons.ai/coopbot/1548ee35-dabb-4c51-a5fa-e58d7777d769'>Abonnez-vous maintenant</a>."
+    "🎁 Pack Standard à prix réduit, <b>-10%</b> jusqu'au 31 Mars. <a id='promo' href='https://shop.beacons.ai/coopbot/1548ee35-dabb-4c51-a5fa-e58d7777d769'>Abonnez-vous maintenant</a>."
   ];
 
   var randomIndex = Math.floor(Math.random() * messages.length);
@@ -152,8 +153,9 @@ function updateProgressBar() {
   document.getElementById("progress-bar").style.width = scrolled + "%";
 }
 
+// Code exécuté au chargement de la page
 document.addEventListener('DOMContentLoaded', function() {
-    var selectedMenu1 = localStorage.getItem('selectedMenu1');
+    var selectedMenu1 = localStorage.getItem('selectedMenu1'); // Menu 1 ouvert ou pas en fonction des cookies 
     if (selectedMenu1 !== null) {
         selectedMenu1 = JSON.parse(selectedMenu1);
         if (selectedMenu1) {
@@ -161,7 +163,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    var selectedMenu2 = localStorage.getItem('selectedMenu2');
+    var selectedMenu2 = localStorage.getItem('selectedMenu2'); // Menu 2 ouvert ou pas en fonction des cookies 
     if (selectedMenu2 !== null) {
         selectedMenu2 = JSON.parse(selectedMenu2);
         if (selectedMenu2) {
@@ -169,7 +171,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    var selectedMenu3 = localStorage.getItem('selectedMenu3');
+    var selectedMenu3 = localStorage.getItem('selectedMenu3'); // Menu 3 ouvert ou pas en fonction des cookies 
     if (selectedMenu3 !== null) {
         selectedMenu3 = JSON.parse(selectedMenu3);
         if (selectedMenu3) {
@@ -177,7 +179,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    var selectedMenu4 = localStorage.getItem('selectedMenu4');
+    var selectedMenu4 = localStorage.getItem('selectedMenu4'); // Menu 4 ouvert ou pas en fonction des cookies 
     if (selectedMenu4 !== null) {
         selectedMenu4 = JSON.parse(selectedMenu4);
         if (selectedMenu4) {
@@ -185,29 +187,30 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    var selectedTheme = localStorage.getItem('selectedTheme');
+    var selectedTheme = localStorage.getItem('selectedTheme'); // Sauvegarder le thème en cookie
     if (selectedTheme) {
         switchTheme(selectedTheme);
     }
 
-    changeMessage();
+    changeMessage(); // Changer le message de promo (quand actif)
 
-    var date = new Date();
-    var limitePromo = new Date(2024, 0, 31, 23, 59, 59);
+    var date = new Date(2024, 2, 6);
+    var limitePromo = new Date(2024, 2, 31, 23, 59, 59);
     var barPromo = document.getElementById('barPromo');
     var footer = document.getElementById('footer');
     var menu = document.getElementById('left-menu');
 
-    if (date > limitePromo) {
+    // Si la date d'aujourd'hui est hors de la date de départ ou la date limite, montrer
+    if (new Date() < date || new Date() > limitePromo) {
         barPromo.style.display = 'none';
         localStorage.setItem('promoHidden', 'none');
         footer.style.top = menu.style.top = '0px';
     } else {
-        promoHide();
+        promoShow();
     }
 
+    // Affiche le temps restant de la promo dans l'élément compteur
     setInterval(function() {
-        var date = new Date();
         var tempsRestant = limitePromo - date;
         var jours = Math.floor(tempsRestant / (1000 * 60 * 60 * 24));
         var heures = Math.floor((tempsRestant % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
@@ -215,17 +218,10 @@ document.addEventListener('DOMContentLoaded', function() {
         var secondes = Math.floor((tempsRestant % (1000 * 60)) / 1000);
         document.getElementById("compteur").innerHTML = jours + "j " + heures + "h " + minutes + "m " + secondes + "s";
     }, 1000);
-
-    if (mainPage()) {
-        var promoState = localStorage.getItem('promoHidden');
-        barPromo.style.display = promoState || 'block';
-        var valeur = (barPromo.style.display === 'none') ? 0 : 50;
-        footer.style.top = menu.style.top = valeur + 'px';
-    }
-
 });
 
-function promoHide() {
+// Aligner les éléments si la promo est activée
+function promoShow() {
   if (mainPage()) {
     var barPromo = document.getElementById('barPromo');
     var footer = document.getElementById('footer');
@@ -237,7 +233,8 @@ function promoHide() {
   }
 }
 
+// Savoir si la page actuelle est la page d'accueil
 function mainPage() {
   var url = window.location.href;
-  return url.includes('/doc-coopbot/') || url.includes('/doc-coopbot/index') || url.includes('/doc-coopbot/home');
+  return url.includes('coopbot.xyz/home') || url.includes('coopbot.xyz/index') || url.includes('coopbot.xyz');
 }
