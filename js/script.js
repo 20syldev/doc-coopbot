@@ -202,11 +202,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Si la date d'aujourd'hui est hors de la date de départ ou la date limite, montrer
     if (new Date() < date || new Date() > limitePromo) {
+        promoHide();
+    } else {
         barPromo.style.display = 'none';
         localStorage.setItem('promoHidden', 'none');
         footer.style.top = menu.style.top = '0px';
-    } else {
-        promoShow();
     }
 
     // Affiche le temps restant de la promo dans l'élément compteur
@@ -220,8 +220,8 @@ document.addEventListener('DOMContentLoaded', function() {
     }, 1000);
 });
 
-// Aligner les éléments si la promo est activée
-function promoShow() {
+// Aligner les éléments si la promo est cachée
+function promoHide() {
   if (mainPage()) {
     var barPromo = document.getElementById('barPromo');
     var footer = document.getElementById('footer');
