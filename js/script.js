@@ -194,19 +194,20 @@ document.addEventListener('DOMContentLoaded', function() {
 
     changeMessage(); // Changer le message de promo (quand actif)
 
-    var date = new Date(2024, 2, 6);
+    var date = new Date(2024, 2, 20);
     var limitePromo = new Date(2024, 2, 31, 23, 59, 59);
     var barPromo = document.getElementById('barPromo');
     var footer = document.getElementById('footer');
+    var body = document.getElementById('bodyText');
     var menu = document.getElementById('left-menu');
 
     // Si la date d'aujourd'hui est hors de la date de départ ou la date limite, montrer
     if (new Date() < date || new Date() > limitePromo) {
-        promoHide();
-    } else {
         barPromo.style.display = 'none';
         localStorage.setItem('promoHidden', 'none');
-        footer.style.top = menu.style.top = '0px';
+        footer.style.top = body.style.marginTop = menu.style.top = '0px';
+    } else {
+        promoShowHide();
     }
 
     // Affiche le temps restant de la promo dans l'élément compteur
@@ -218,19 +219,23 @@ document.addEventListener('DOMContentLoaded', function() {
         var secondes = Math.floor((tempsRestant % (1000 * 60)) / 1000);
         document.getElementById("compteur").innerHTML = jours + "j " + heures + "h " + minutes + "m " + secondes + "s";
     }, 1000);
+
+    // Change le message en haut toutes les 10s
+    setInterval(function() {
+        changeMessage();
+    }, 10000)
 });
 
 // Aligner les éléments si la promo est cachée
-function promoHide() {
-  if (mainPage()) {
+function promoShowHide() {
     var barPromo = document.getElementById('barPromo');
     var footer = document.getElementById('footer');
+    var body = document.getElementById('bodyText');
     var menu = document.getElementById('left-menu');
     barPromo.style.display = (barPromo.style.display === 'none' || barPromo.style.display === '') ? 'block' : 'none';
     localStorage.setItem('promoHidden', barPromo.style.display);
     var valeur = (barPromo.style.display === 'none') ? 0 : 50;
-    footer.style.top = menu.style.top = valeur + 'px';
-  }
+    footer.style.top = body.style.marginTop = menu.style.top = valeur + 'px';
 }
 
 // Savoir si la page actuelle est la page d'accueil
