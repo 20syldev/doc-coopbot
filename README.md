@@ -3,7 +3,7 @@
 
 # Coop - Bot Discord - Wiki
   [![Badge1](https://img.shields.io/badge/Site%20:-v1.0.0%20alpha%200.4-6479ee?labelColor=23272A)](https://coopbot.xyz)
-  [![Badge2](https://img.shields.io/discord/1056940597975449710?logo=discord&labelColor=23272A&label=Discord&color=5e60ce)](https://discord.gg/ASpCdT2JZQ)
+  [![Badge2](https://img.shields.io/discord/1056940597975449710?logo=discord&labelColor=23272A&label=Discord&color=5e60ce)](https://coopbot.xyz/discord)
   [![Badge3](https://img.shields.io/badge/Bot%20:-v1.5.0-6479ee?labelColor=23272A)](https://coopbot.xyz/status)
 
 </div>
@@ -27,8 +27,8 @@ Le bot **Coop** est un assistant polyvalent conçu pour améliorer votre expéri
 
 ## Outils supplémentaires
 Vous pouvez suivre l'activité et la disponibilité du site, du bot et du magasin en vous rendant sur [Coop Status](https://coopbot.xyz/status).  
-Aussi, vous pouvez acheter des grades pour nous soutenir dans le [Coop Store](https://beacons.ai/coopstore), et avoir des petits cadeaux comme, des annonces en avant-première, une visibilité et des avantages au sein du [serveur support](https://discord.gg/ASpCdT2JZQ).
-> *Ces liens vous redirigeront vers des sites tiers, non hébergés par nous mais nous en avons tous les droits de modification, alors si le magasin ferme ou est indisponible, pensez à aller sur [Coop Status](https://coopbot.xyz/status), et s'il est aussi indisponible, pensez à regarder les actualités sur le [serveur Discord](https://discord.gg/ASpCdT2JZQ).*
+Aussi, vous pouvez acheter des grades pour nous soutenir dans le [Coop Store](https://beacons.ai/coopstore), et avoir des petits cadeaux comme, des annonces en avant-première, une visibilité et des avantages au sein du [serveur support](https://coopbot.xyz/discord).
+> *Ces liens vous redirigeront vers des sites tiers, non hébergés par nous mais nous en avons tous les droits de modification, alors si le magasin ferme ou est indisponible, pensez à aller sur [Coop Status](https://coopbot.xyz/status), et s'il est aussi indisponible, pensez à regarder les actualités sur le [serveur Discord](https://coopbot.xyz/discord).*
 
 
 ## Comment utiliser
