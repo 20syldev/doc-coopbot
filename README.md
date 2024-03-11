@@ -32,7 +32,7 @@ Aussi, vous pouvez acheter des grades pour nous soutenir dans le [Coop Store](ht
 
 
 ## Comment utiliser
-1. Invitez le bot Coop sur votre serveur Discord en cliquant [ici](https://discord.com/oauth2/authorize?client_id=881455282838962186&permissions=8&redirect_uri=https%3A%2F%2Fcoopbot.xyz&response_type=code&scope=bot%20applications.commands) ou en vous rendant sur https://coopbot.xyz/invite.
+1. Invitez le bot Coop sur votre serveur Discord en cliquant [ici](https://discord.com/oauth2/authorize?client_id=881455282838962186&permissions=8&redirect_uri=https%3A%2F%2Fcoopbot.xyz&response_type=code&scope=bot%20applications.commands) ou en vous rendant sur [coopbot.xyz/invite](https://coopbot.xyz/invite).
 2. Assurez-vous que le bot dispose des [autorisations nécessaires](https://coopbot.xyz/helps/perms) pour les fonctionnalités que vous souhaitez utiliser.
 3. Utilisez le préfixe `.` suivi de la commande désirée pour interagir avec le bot. Par exemple, utilisez `/help` ou `.help` pour voir la liste des commandes disponibles.
 
