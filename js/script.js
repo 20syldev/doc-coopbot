@@ -133,9 +133,9 @@ function copyContent(button) {
 function changeMessage() {
   var messages = [
     "🎁 <b>Promotions</b> de printemps, des réductions sur tout le site. <a id='promo' href='https://coopbot.xyz/store'>Abonnez-vous maintenant</a>.",
-    "🎁 <b>30%</b> de réduction sur le pack Premium jusqu'à fin Mars. <a id='promo' href='https://shop.beacons.ai/coopbot/d66b4ff7-26ab-4af8-8967-8ca83a41a349'>Abonnez-vous maintenant</a>.",
-    "🎁 Pack Plus à <b>3,99 €</b> <span class='promoCroix'>4,99 €</span> pendant encore <span id='compteur'></span>. <a id='promo' href='https://shop.beacons.ai/coopbot/b82690a7-3782-4969-8c2e-2b48403523dc'>Abonnez-vous maintenant</a>.",
-    "🎁 Pack Standard à prix réduit, <b>-10%</b> jusqu'au 31 Mars. <a id='promo' href='https://shop.beacons.ai/coopbot/1548ee35-dabb-4c51-a5fa-e58d7777d769'>Abonnez-vous maintenant</a>."
+    "🎁 <b>30%</b> de réduction sur le pack Premium jusqu'à fin Mars. <a id='promo' href='https://shop.beacons.ai/coopstore/d66b4ff7-26ab-4af8-8967-8ca83a41a349'>Abonnez-vous maintenant</a>.",
+    "🎁 Pack Plus à <b>3,99 €</b> <span class='promoCroix'>4,99 €</span> pendant encore <span id='compteur'></span>. <a id='promo' href='https://shop.beacons.ai/coopstore/b82690a7-3782-4969-8c2e-2b48403523dc'>Abonnez-vous maintenant</a>.",
+    "🎁 Pack Standard à prix réduit, <b>-10%</b> jusqu'au 31 Mars. <a id='promo' href='https://shop.beacons.ai/coopstore/1548ee35-dabb-4c51-a5fa-e58d7777d769'>Abonnez-vous maintenant</a>."
   ];
 
   var randomIndex = Math.floor(Math.random() * messages.length);
