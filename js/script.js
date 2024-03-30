@@ -202,17 +202,17 @@ document.addEventListener('DOMContentLoaded', function() {
     var menu = document.getElementById('left-menu');
 
     // Si la date d'aujourd'hui est hors de la date de départ ou la date limite, montrer
-    if (new Date() < date || new Date() > limitePromo) {
+    if (new Date() < date || new Date() > limitePromo || localStorage.getItem('promoHidden') == 'none') {
         barPromo.style.display = 'none';
         localStorage.setItem('promoHidden', 'none');
         footer.style.top = body.style.marginTop = menu.style.top = '0px';
     } else {
-        promoShowHide();
+        barPromo.style.display = 'block';
     }
 
     // Affiche le temps restant de la promo dans l'élément compteur
     setInterval(function() {
-        var tempsRestant = limitePromo - date;
+        var tempsRestant = limitePromo - new Date();
         var jours = Math.floor(tempsRestant / (1000 * 60 * 60 * 24));
         var heures = Math.floor((tempsRestant % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
         var minutes = Math.floor((tempsRestant % (1000 * 60 * 60)) / (1000 * 60));
@@ -232,8 +232,10 @@ function promoShowHide() {
     var footer = document.getElementById('footer');
     var body = document.getElementById('bodyText');
     var menu = document.getElementById('left-menu');
-    barPromo.style.display = (barPromo.style.display === 'none' || barPromo.style.display === '') ? 'block' : 'none';
+    
+    barPromo.style.display = 'none'
     localStorage.setItem('promoHidden', barPromo.style.display);
+
     var valeur = (barPromo.style.display === 'none') ? 0 : 50;
     footer.style.top = body.style.marginTop = menu.style.top = valeur + 'px';
 }
