@@ -7,13 +7,13 @@
 Si vous trouvez un bug, vous pouvez contribuer en soumettant un problème [ici](https://github.com/20syldev/doc-coopbot/issues).
 
 > [!NOTE]
-> Avant de créer un rapport de bogue, vérifiez si quelqu'un d'autre n'a pas déjà soumis le même problème [ici](https://github.com/20syldev/doc-coopbot/issues). Si vous avez des informations supplémentaires concernant le bogue, vous pouvez les commenter dans le même problème.
+> Avant de créer un rapport de bogue, vérifiez si quelqu'un d'autre n'a pas déjà soumis le même problème [ici](https://github.com/20syldev/doc-coopbot/labels/Bug). Si vous avez des informations supplémentaires concernant le bogue, vous pouvez les commenter dans le même problème.
 
 ## 💡 Vous avez une idée géniale ?
 Vous avez en tête une fonctionnalité manquante ? Partagez vos idées avec nous en soumettant une suggestion [ici](https://github.com/20syldev/doc-coopbot/issues).
 
 > [!NOTE]
-> Avant de créer une suggestion, vérifiez si quelqu'un d'autre a déjà soumis la suggestion en question [ici](https://github.com/20syldev/doc-coopbot/issues). Si vous en trouvez une, mettez un like pour nous indiquer la priorité de la fonctionnalité.
+> Avant de créer une suggestion, vérifiez si quelqu'un d'autre a déjà soumis la suggestion en question [ici](https://github.com/20syldev/doc-coopbot/labels/Am%C3%A9lioration). Si vous en trouvez une, mettez un like pour nous indiquer la priorité de la fonctionnalité.
 
 ---
 
