@@ -132,10 +132,10 @@ function copyContent(button) {
 
 function changeMessage() {
   var messages = [
-    "🎁 <b>Promotions</b> de printemps, des réductions sur tout le site. <a id='promo' href='https://coopbot.xyz/store'>Abonnez-vous maintenant</a>.",
-    "🎁 <b>30%</b> de réduction sur le pack Premium jusqu'à fin Mars. <a id='promo' href='https://shop.beacons.ai/coopstore/d66b4ff7-26ab-4af8-8967-8ca83a41a349'>Abonnez-vous maintenant</a>.",
-    "🎁 Pack Plus à <b>3,99 €</b> <span class='promoCroix'>4,99 €</span> pendant encore <span id='compteur'></span>. <a id='promo' href='https://shop.beacons.ai/coopstore/b82690a7-3782-4969-8c2e-2b48403523dc'>Abonnez-vous maintenant</a>.",
-    "🎁 Pack Standard à prix réduit, <b>-10%</b> jusqu'au 31 Mars. <a id='promo' href='https://shop.beacons.ai/coopstore/1548ee35-dabb-4c51-a5fa-e58d7777d769'>Abonnez-vous maintenant</a>."
+    "🎁 C'est l'<b>anniversaire</b> du bot ! Profitez de réductions sur tout le site. <a id='promo' href='https://coopbot.xyz/store'>Abonnez-vous maintenant</a>.",
+    "🎁 <b>70%</b> de réduction sur le pack Premium jusqu'à fin Mars. <a id='promo' href='https://shop.beacons.ai/coopstore/d66b4ff7-26ab-4af8-8967-8ca83a41a349'>Abonnez-vous maintenant</a>.",
+    "🎁 Pack Plus à <b>0.99 €</b> <span class='promoCroix'>4,99 €</span> pendant encore <span id='compteur'></span>. <a id='promo' href='https://shop.beacons.ai/coopstore/b82690a7-3782-4969-8c2e-2b48403523dc'>Abonnez-vous maintenant</a>.",
+    "🎁 Pack Standard <b>GRATUIT</b>, <b>-100%</b> pendant 24 heures. <a id='promo' href='https://shop.beacons.ai/coopstore/1548ee35-dabb-4c51-a5fa-e58d7777d769'>Abonnez-vous maintenant</a>."
   ];
 
   var randomIndex = Math.floor(Math.random() * messages.length);
@@ -143,88 +143,6 @@ function changeMessage() {
 
   document.getElementById('promoText').innerHTML = selectedMessage;
 }
-
-window.onscroll = function () { updateProgressBar() };
-
-function updateProgressBar() {
-  const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-  const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-  const scrolled = (winScroll / height) * 100;
-  document.getElementById("progress-bar").style.width = scrolled + "%";
-}
-
-// Code exécuté au chargement de la page
-document.addEventListener('DOMContentLoaded', function() {
-    var selectedMenu1 = localStorage.getItem('selectedMenu1'); // Menu 1 ouvert ou pas en fonction des cookies 
-    if (selectedMenu1 !== null) {
-        selectedMenu1 = JSON.parse(selectedMenu1);
-        if (selectedMenu1) {
-            toggleCommandsColumn1();
-        }
-    }
-
-    var selectedMenu2 = localStorage.getItem('selectedMenu2'); // Menu 2 ouvert ou pas en fonction des cookies 
-    if (selectedMenu2 !== null) {
-        selectedMenu2 = JSON.parse(selectedMenu2);
-        if (selectedMenu2) {
-            toggleCommandsColumn2();
-        }
-    }
-
-    var selectedMenu3 = localStorage.getItem('selectedMenu3'); // Menu 3 ouvert ou pas en fonction des cookies 
-    if (selectedMenu3 !== null) {
-        selectedMenu3 = JSON.parse(selectedMenu3);
-        if (selectedMenu3) {
-            toggleCommandsColumn3();
-        }
-    }
-
-    var selectedMenu4 = localStorage.getItem('selectedMenu4'); // Menu 4 ouvert ou pas en fonction des cookies 
-    if (selectedMenu4 !== null) {
-        selectedMenu4 = JSON.parse(selectedMenu4);
-        if (selectedMenu4) {
-            toggleCommandsColumn4();
-        }
-    }
-
-    var selectedTheme = localStorage.getItem('selectedTheme'); // Sauvegarder le thème en cookie
-    if (selectedTheme) {
-        switchTheme(selectedTheme);
-    }
-
-    changeMessage(); // Changer le message de promo (quand actif)
-
-    var date = new Date(2024, 2, 20);
-    var limitePromo = new Date(2024, 2, 31, 23, 59, 59);
-    var barPromo = document.getElementById('barPromo');
-    var footer = document.getElementById('footer');
-    var body = document.getElementById('bodyText');
-    var menu = document.getElementById('left-menu');
-
-    // Si la date d'aujourd'hui est hors de la date de départ ou la date limite, montrer
-    if (new Date() < date || new Date() > limitePromo || localStorage.getItem('promoHidden') == 'none') {
-        barPromo.style.display = 'none';
-        localStorage.setItem('promoHidden', 'none');
-        footer.style.top = body.style.marginTop = menu.style.top = '0px';
-    } else {
-        barPromo.style.display = 'block';
-    }
-
-    // Affiche le temps restant de la promo dans l'élément compteur
-    setInterval(function() {
-        var tempsRestant = limitePromo - new Date();
-        var jours = Math.floor(tempsRestant / (1000 * 60 * 60 * 24));
-        var heures = Math.floor((tempsRestant % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        var minutes = Math.floor((tempsRestant % (1000 * 60 * 60)) / (1000 * 60));
-        var secondes = Math.floor((tempsRestant % (1000 * 60)) / 1000);
-        document.getElementById("compteur").innerHTML = jours + "j " + heures + "h " + minutes + "m " + secondes + "s";
-    }, 1000);
-
-    // Change le message en haut toutes les 10s
-    setInterval(function() {
-        changeMessage();
-    }, 10000)
-});
 
 // Aligner les éléments si la promo est cachée
 function promoShowHide() {
@@ -245,3 +163,86 @@ function mainPage() {
   var url = window.location.href;
   return url.includes('coopbot.xyz/home') || url.includes('coopbot.xyz/index') || url.includes('coopbot.xyz');
 }
+
+function updateProgressBar() {
+  const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  const scrolled = (winScroll / height) * 100;
+  document.getElementById("progress-bar").style.width = scrolled + "%";
+}
+
+window.onscroll = function () { updateProgressBar() };
+
+// Code exécuté au chargement de la page
+document.addEventListener('DOMContentLoaded', function() {
+  var selectedMenu1 = localStorage.getItem('selectedMenu1'); // Menu 1 ouvert ou pas en fonction des cookies 
+  if (selectedMenu1 !== null) {
+      selectedMenu1 = JSON.parse(selectedMenu1);
+      if (selectedMenu1) {
+          toggleCommandsColumn1();
+      }
+  }
+
+  var selectedMenu2 = localStorage.getItem('selectedMenu2'); // Menu 2 ouvert ou pas en fonction des cookies 
+  if (selectedMenu2 !== null) {
+      selectedMenu2 = JSON.parse(selectedMenu2);
+      if (selectedMenu2) {
+          toggleCommandsColumn2();
+      }
+  }
+
+  var selectedMenu3 = localStorage.getItem('selectedMenu3'); // Menu 3 ouvert ou pas en fonction des cookies 
+  if (selectedMenu3 !== null) {
+      selectedMenu3 = JSON.parse(selectedMenu3);
+      if (selectedMenu3) {
+          toggleCommandsColumn3();
+      }
+  }
+
+  var selectedMenu4 = localStorage.getItem('selectedMenu4'); // Menu 4 ouvert ou pas en fonction des cookies 
+  if (selectedMenu4 !== null) {
+      selectedMenu4 = JSON.parse(selectedMenu4);
+      if (selectedMenu4) {
+          toggleCommandsColumn4();
+      }
+  }
+
+  var selectedTheme = localStorage.getItem('selectedTheme'); // Sauvegarder le thème en cookie
+  if (selectedTheme) {
+      switchTheme(selectedTheme);
+  }
+
+  changeMessage(); // Changer le message de promo (quand actif)
+
+  var date = new Date(2024, 7, 29);
+  var limitePromo = new Date(2024, 7, 29, 23, 59, 59);
+  var barPromo = document.getElementById('barPromo');
+  var footer = document.getElementById('footer');
+  var body = document.getElementById('bodyText');
+  var menu = document.getElementById('left-menu');
+
+  // Si la date d'aujourd'hui est hors de la date de départ ou la date limite, montrer
+  if (new Date() < date || new Date() > limitePromo || localStorage.getItem('promoHidden') == 'none') {
+      barPromo.style.display = 'none';
+      localStorage.setItem('promoHidden', 'none');
+      footer.style.top = body.style.marginTop = menu.style.top = '0px';
+  } 
+  else {
+      barPromo.style.display = 'block';
+      
+      // Affiche le temps restant de la promo dans l'élément compteur
+      setInterval(function() {
+          var tempsRestant = limitePromo - new Date();
+          var jours = Math.floor(tempsRestant / (1000 * 60 * 60 * 24));
+          var heures = Math.floor((tempsRestant % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var minutes = Math.floor((tempsRestant % (1000 * 60 * 60)) / (1000 * 60));
+          var secondes = Math.floor((tempsRestant % (1000 * 60)) / 1000);
+          document.getElementById("compteur").innerHTML = jours + "j " + heures + "h " + minutes + "m " + secondes + "s";
+      }, 1000);
+
+      // Change le message en haut toutes les 10s
+      setInterval(function() {
+            changeMessage();
+      }, 10000)
+  }
+});
