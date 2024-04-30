@@ -29,7 +29,12 @@ Le bot **Coop** est un assistant polyvalent conçu pour améliorer votre expéri
 Vous pouvez suivre l'activité et la disponibilité du site, du bot et du magasin en vous rendant sur [Coop Status](https://coopbot.xyz/status).  
 Aussi, vous pouvez acheter des grades pour nous soutenir dans le [Coop Store](https://coopbot.xyz/store), et avoir des petits cadeaux comme, des annonces en avant-première, une visibilité et des avantages au sein du [serveur support](https://coopbot.xyz/discord).
 Finalement, une [API](https://github.com/20syldev/coop-api) pour vous permettre d'utiliser quelques fonctionnalités de **Coop** est disponible [ici](https://api.coopbot.xyz).
-> *Ces liens vous redirigeront vers des sites tiers, non hébergés par nous mais nous en avons tous les droits de modification, alors si le magasin ferme ou est indisponible, pensez à aller sur [Coop Status](https://coopbot.xyz/status), et s'il est aussi indisponible, pensez à regarder les actualités sur le [serveur Discord](https://coopbot.xyz/discord).*
+
+> [!WARNING]
+> *[Coop Status](https://coopbot.xyz/status) et [Coop Store](https://coopbot.xyz/store) ne sont pas hébergés par nous mais nous en avons tous les droits de modification.*
+
+> [!TIP]
+> Si le magasin **ferme** ou est **indisponible**, pensez à aller sur [Coop Status](https://coopbot.xyz/status) ! Si la page de statut est aussi indisponible, pensez à regarder les actualités sur le [serveur Discord](https://coopbot.xyz/discord), il est possible que des **mises à jour** soient en cours...
 
 
 ## Comment utiliser
