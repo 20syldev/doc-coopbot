@@ -5,7 +5,7 @@
   [![Version](https://img.shields.io/badge/Site%20:-v1.0.0%20alpha%200.7-6479ee?labelColor=23272A)](https://github.com/20syldev/doc-coopbot/releases/latest)
   [![PreRelease](https://img.shields.io/badge/Pre&#8722;release-d29922)](https://github.com/20syldev/doc-coopbot/releases/latest)
   [![Discord](https://img.shields.io/discord/1056940597975449710?logo=discord&labelColor=23272A&label=Discord&color=5e60ce)](https://coopbot.xyz/discord)
-  [![Bot](https://img.shields.io/badge/Bot%20:-v1.5.1-6479ee?labelColor=23272A)](https://coopbot.xyz/status)
+  [![Bot](https://img.shields.io/badge/Bot%20:-v1.5.2-6479ee?labelColor=23272A)](https://coopbot.xyz/status)
 </div>
 
 ---
@@ -16,7 +16,7 @@ Pour éviter toute confusion lors de l'utilisation du site / wiki, veuillez lire
 > La plupart des pages de la catégorie **commandes slash** n'ont pas encore été créées. Les rapports de bug sont nécessaires seulement en dehors de cette catégorie.
 
 > [!IMPORTANT]
-> Lorsque la v1 sortira, les versions `alpha` seront toujours disponibles dans l'onglet "[Releases](https://github.com/20syldev/doc-coopbot/releases)".  
+> Lorsque la v1 sortira, les versions **`alpha`** seront toujours disponibles dans l'onglet "[Releases](https://github.com/20syldev/doc-coopbot/releases)".  
 > Les versions précédentes contiendront des liens obsolètes, veillez à ne pas les utiliser sauf si vous avez confiance en eux.
 
 ---
