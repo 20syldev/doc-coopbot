@@ -498,7 +498,7 @@ h1 a {
 #btn1:hover {
     background-color: #2d2e2f;
     color: #82b5e3;
-    transform: scale(0.9);
+    transform: scale(0.95);
     box-shadow: 0 0 10px #0000004d;
 }
 
@@ -527,7 +527,7 @@ h1 a {
 #btn2:hover {
     background-color: #2d2e2f;
     color: #4d58d2;
-    transform: scale(0.9);
+    transform: scale(0.95);
     box-shadow: 0 0 10px #0000004d;
 }
 
@@ -556,7 +556,7 @@ h1 a {
 #btn3:hover {
     background-color: #2d2e2f;
     color: #5a78f4;
-    transform: scale(0.9);
+    transform: scale(0.95);
     box-shadow: 0 0 10px #0000004d;
 }
 
