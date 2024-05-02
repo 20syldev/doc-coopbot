@@ -1,3 +1,18 @@
+// Détection de la page et couleur dans la catégorie
+var currentPageUrl = window.location.pathname;
+var menuColumns = document.querySelectorAll('.menu-column');
+
+menuColumns.forEach(function(column) {
+  var menuLinks = column.querySelectorAll('.openmenu');
+  
+  menuLinks.forEach(function(link) {
+    if (link.getAttribute('href') === currentPageUrl) {
+      link.parentNode.classList.add('menucolor1');
+    }
+  });
+});
+
+// Ouvrir ou non les catégories au chargement de la page
 var commandsColumnVisible1, commandsColumnVisible2, commandsColumnVisible3, commandsColumnVisible4 = false;
 
 function toggleCommandsColumn1() {
