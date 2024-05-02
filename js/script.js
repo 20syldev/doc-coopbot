@@ -1,17 +1,3 @@
-// Détection de la page et couleur dans la catégorie
-var currentPageUrl = window.location.pathname;
-var menuColumns = document.querySelectorAll('.menu-column');
-
-menuColumns.forEach(function(column) {
-  var menuLinks = column.querySelectorAll('.openmenu');
-  
-  menuLinks.forEach(function(link) {
-    if (link.getAttribute('href') === currentPageUrl) {
-      link.parentNode.classList.add('menucolor1');
-    }
-  });
-});
-
 // Ouvrir ou non les catégories au chargement de la page
 var commandsColumnVisible1, commandsColumnVisible2, commandsColumnVisible3, commandsColumnVisible4 = false;
 
@@ -89,6 +75,30 @@ function toggleCommandsColumn4() {
   commandsColumnVisible4 = !commandsColumnVisible4;
 
   localStorage.setItem('selectedMenu4', JSON.stringify(commandsColumnVisible4));
+}
+
+// Fonction pour automatiser la numérotation des sections
+function autoNum(id_colonne) {
+  var items = document.querySelectorAll(id_colonne + ' li');
+
+  items.forEach(function(item, index) {
+      var strongTag = item.querySelector('strong');
+      var prefix = '';
+      
+      if (id_colonne === '#commands-column1') {
+          prefix = '1.';
+      }
+      else if (id_colonne === '#commands-column2') {
+          prefix = '2.';
+      }
+      else if (id_colonne === '#commands-column3') {
+          prefix = '3.';
+      }
+      else if (id_colonne === '#commands-column4') {
+          prefix = '4.';
+      }
+      strongTag.textContent = prefix + (index) + ".";
+  });
 }
 
 function switchTheme(theme) {
@@ -173,12 +183,6 @@ function promoShowHide() {
     footer.style.top = body.style.marginTop = menu.style.top = valeur + 'px';
 }
 
-// Savoir si la page actuelle est la page d'accueil
-function mainPage() {
-  var url = window.location.href;
-  return url.includes('coopbot.xyz/home') || url.includes('coopbot.xyz/index') || url.includes('coopbot.xyz');
-}
-
 function updateProgressBar() {
   const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
   const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
@@ -190,6 +194,11 @@ window.onscroll = function () { updateProgressBar() };
 
 // Code exécuté au chargement de la page
 document.addEventListener('DOMContentLoaded', function() {
+  autoNum('#commands-column1');
+  autoNum('#commands-column2');
+  autoNum('#commands-column3');
+  autoNum('#commands-column4');
+  
   var selectedMenu1 = localStorage.getItem('selectedMenu1'); // Menu 1 ouvert ou pas en fonction des cookies 
   if (selectedMenu1 !== null) {
       selectedMenu1 = JSON.parse(selectedMenu1);
@@ -227,8 +236,6 @@ document.addEventListener('DOMContentLoaded', function() {
       switchTheme(selectedTheme);
   }
 
-  changeMessage(); // Changer le message de promo (quand actif)
-
   var date = new Date(2024, 7, 29);
   var limitePromo = new Date(2024, 7, 29, 23, 59, 59);
   var barPromo = document.getElementById('barPromo');
@@ -243,6 +250,8 @@ document.addEventListener('DOMContentLoaded', function() {
       footer.style.top = body.style.marginTop = menu.style.top = '0px';
   } 
   else {
+      changeMessage(); // Changer le message de promo
+
       barPromo.style.display = 'block';
       
       // Affiche le temps restant de la promo dans l'élément compteur
