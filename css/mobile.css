@@ -404,19 +404,11 @@ h1 a {
     margin-left: 0.2%;
 }
 
-#menucolor0 a {
-    color: #a1adb8;
-}
-
-#menucolor0 a:hover {
+.menucolor a {
     color: #76a4e4;
 }
 
-#menucolor1 a {
-    color: #76a4e4;
-}
-
-#menucolor1 a:hover {
+.menucolor a:hover {
     color: #76a4e4;
 }
 
