@@ -194,6 +194,15 @@ window.onscroll = function () { updateProgressBar() };
 
 // Code exécuté au chargement de la page
 document.addEventListener('DOMContentLoaded', function() {
+  setInterval(function() {
+    document.getElementById("loader").style.zIndex = '-1';
+    document.getElementById("loader").style.opacity = '0';
+    document.getElementById("loader").style.transition = '0.5s';
+    document.getElementById("loader-wrapper").style.zIndex = '-1';
+    document.getElementById("loader-wrapper").style.opacity = '0';
+    document.getElementById("loader-wrapper").style.transition = '0.5s';
+  }, 1000)
+
   autoNum('#commands-column1');
   autoNum('#commands-column2');
   autoNum('#commands-column3');
