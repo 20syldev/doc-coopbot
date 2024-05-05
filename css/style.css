@@ -792,6 +792,15 @@ h1 a {
 }
 
 /* Chargement de la page (Animation) */
+#loader {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    border: 4px solid #ffffff;
+    animation: loader 2s infinite ease;
+}
+
 #loader-wrapper {
     width: 100%;
     height: 100%;
@@ -804,14 +813,7 @@ h1 a {
     align-items: center;
     z-index: 3;
 }
-#loader {
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    position: relative;
-    border: 4px solid #ffffff;
-    animation: loader 2s infinite ease;
-}
+
 #loader-inner {
     vertical-align: top;
     display: inline-block;
