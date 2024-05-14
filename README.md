@@ -5,7 +5,7 @@
   [![Version](https://img.shields.io/badge/Site%20:-v1.0.0%20alpha%200.9-6479ee?labelColor=23272A)](https://github.com/20syldev/doc-coopbot/releases/latest)
   [![PreRelease](https://img.shields.io/badge/Pre&#8722;release-d29922)](https://github.com/20syldev/doc-coopbot/releases/latest)
   [![Discord](https://img.shields.io/discord/1056940597975449710?logo=discord&labelColor=23272A&label=Discord&color=5e60ce)](https://coopbot.xyz/discord)
-  [![Bot](https://img.shields.io/badge/Bot%20:-v1.5.2-6479ee?labelColor=23272A)](https://coopbot.xyz/status)
+  [![Bot](https://img.shields.io/badge/Bot%20:-v1.5.2-6479ee?labelColor=23272A)](https://status.coopbot.xyz)
 </div>
 
 ---
@@ -26,15 +26,15 @@ Le bot **Coop** est un assistant polyvalent conçu pour améliorer votre expéri
 
 
 ## Outils supplémentaires
-Vous pouvez suivre l'activité et la disponibilité du site, du bot et du magasin en vous rendant sur [Coop Status](https://coopbot.xyz/status).  
-Aussi, vous pouvez acheter des grades pour nous soutenir dans le [Coop Store](https://coopbot.xyz/store), et avoir des petits cadeaux comme, des annonces en avant-première, une visibilité et des avantages au sein du [serveur support](https://coopbot.xyz/discord).
+Vous pouvez suivre l'activité et la disponibilité du site, du bot et du magasin en vous rendant sur [Coop Status](https://status.coopbot.xyz).  
+Aussi, vous pouvez acheter des grades pour nous soutenir dans le [Coop Store](https://store.coopbot.xyz), et avoir des petits cadeaux comme, des annonces en avant-première, une visibilité et des avantages au sein du [serveur support](https://coopbot.xyz/discord).
 Finalement, une [API](https://github.com/20syldev/coop-api) pour vous permettre d'utiliser quelques fonctionnalités de **Coop** est disponible [ici](https://api.coopbot.xyz).
 
 > [!WARNING]
-> *[Coop Status](https://coopbot.xyz/status) et [Coop Store](https://coopbot.xyz/store) ne sont pas hébergés par nous mais nous en avons tous les droits de modification.*
+> *[Coop Status](https://status.coopbot.xyz) et [Coop Store](https://store.coopbot.xyz) ne sont pas hébergés par nous mais nous en avons tous les droits de modification.*
 
 > [!TIP]
-> Si le magasin **ferme** ou est **indisponible**, pensez à aller sur [Coop Status](https://coopbot.xyz/status) ! Si la page de statut est aussi indisponible, pensez à regarder les actualités sur le [serveur Discord](https://coopbot.xyz/discord), il est possible que des **mises à jour** soient en cours...
+> Si le magasin **ferme** ou est **indisponible**, pensez à aller sur [Coop Status](https://status.coopbot.xyz) ! Si la page de statut est aussi indisponible, pensez à regarder les actualités sur le [serveur Discord](https://coopbot.xyz/discord), il est possible que des **mises à jour** soient en cours...
 
 
 ## Comment utiliser
