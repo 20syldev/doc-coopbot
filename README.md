@@ -28,7 +28,7 @@ Le bot **Coop** est un assistant polyvalent conçu pour améliorer votre expéri
 ## Outils supplémentaires
 Vous pouvez suivre l'activité et la disponibilité du site, du bot et du magasin en vous rendant sur [Coop Status](https://status.coopbot.xyz).  
 Aussi, vous pouvez acheter des grades pour nous soutenir dans le [Coop Store](https://store.coopbot.xyz), et avoir des petits cadeaux comme, des annonces en avant-première, une visibilité et des avantages au sein du [serveur support](https://coopbot.xyz/discord).
-Finalement, une [API](https://github.com/20syldev/coop-api) pour vous permettre d'utiliser quelques fonctionnalités de **Coop** est disponible [ici](https://api.coopbot.xyz).
+Finalement, une [API](https://github.com/20syldev/api) pour vous permettre d'utiliser quelques fonctionnalités de **Coop** est disponible [ici](https://api.sylvain.pro).
 
 > [!WARNING]
 > *[Coop Status](https://status.coopbot.xyz) et [Coop Store](https://store.coopbot.xyz) ne sont pas hébergés par nous mais nous en avons tous les droits de modification.*
