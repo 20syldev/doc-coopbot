@@ -4,7 +4,6 @@
 # Coop - Bot Discord - Wiki
   [![Version](https://custom-icon-badges.demolab.com/badge/Site%20:-v1.0.0%20alpha%200.9-6479ee?logo=coopbot&labelColor=23272A)](https://github.com/20syldev/doc-coopbot/releases/latest)
   [![PreRelease](https://img.shields.io/badge/Pre&#8722;release-d29922)](https://github.com/20syldev/doc-coopbot/releases/latest)
-  [![Discord](https://img.shields.io/discord/1056940597975449710?logo=discord&labelColor=23272A&label=Discord&color=5e60ce)](https://coopbot.xyz/discord)
   [![Bot](https://img.shields.io/badge/Bot%20:-v1.5.2-6479ee?labelColor=23272A)](https://status.coopbot.xyz)
 </div>
 
