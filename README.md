@@ -1,7 +1,7 @@
 <div align="center">
   <a href="https://coopbot.xyz"><img src="https://coopbot.xyz/images/coopbot.png" alt="Logo" width="25%" height="auto"></a>
 
-# Coop - Bot Discord - Wiki
+  # Coop - Bot Discord - Wiki
   [![Version](https://custom-icon-badges.demolab.com/badge/Site%20:-v1.0.0%20alpha%200.9-6479ee?logo=coopbot&labelColor=23272A)](https://github.com/20syldev/doc-coopbot/releases/latest)
   [![PreRelease](https://img.shields.io/badge/Pre&#8722;release-d29922)](https://github.com/20syldev/doc-coopbot/releases/latest)
   [![Bot](https://img.shields.io/badge/Bot%20:-v1.5.2-6479ee?labelColor=23272A)](https://status.coopbot.xyz)
